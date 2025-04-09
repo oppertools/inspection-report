@@ -1,0 +1,50 @@
+@theme {
+    /**
+      * Palette
+      */
+    /* Black & White */
+    --color-black: #18222F;
+    --color-white: oklch(100% 0 0);
+    --color-transparent: transparent;
+    --color-current: currentColor;
+
+    --color-gray-50: #F9FAFE;
+    --color-gray-100: #BECBE5;
+    --color-gray-400: #A1A1AA;
+
+    --color-green-100: #DCFCE7;
+    --color-green-600: #116932;
+
+    --color-red-100: #FEE2E2;
+    --color-red-500: #E5484D;
+    --color-red-600: #991919;
+
+    --color-purple-100: #F3E8FF;
+    --color-purple-700: #641BA3;
+
+    --color-orange-100: #FFEDD5;
+    --color-orange-600: #92310A;
+
+    --color-blue-100: #DBEAFE;
+    --color-blue-600: #2563EB;
+
+    --color-secondary-100: #C4ECED;
+    --color-secondary-500: #1F6567;
+
+    --color-primary: #61BD73;
+    --color-muted: #697FA0;
+
+    --color-primary-50: #F1F9F2;
+    --color-primary-100: #BEE4C6;
+
+    --text-sm: 10px;
+    --text-base: 12px;
+    --text-md: 15px;
+    --text-lg: 18px;
+    --text-xl: 24px;
+
+    --font-sans: 'Inter';
+
+    --aspect-media: 55/42;
+    --aspect-signature: 33/8;
+}

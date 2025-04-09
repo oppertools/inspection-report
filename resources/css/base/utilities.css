@@ -1,0 +1,46 @@
+@utility icon-full {
+    height: 1em;
+    width: 1em;
+}
+
+@utility mx-container {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+@utility condition {
+    text-align: center;
+    font-weight: 600;
+}
+
+@utility good-condition {
+    color: var(--color-green-600);
+    background: var(--color-green-100);
+}
+@utility missing-condition {
+    color: var(--color-purple-700);
+    background: var(--color-purple-100);
+}
+@utility poor-condition {
+    color: var(--color-red-600);
+    background: var(--color-red-100);
+}
+@utility used-condition {
+    color: var(--color-orange-600);
+    background: var(--color-orange-100);
+}
+@utility excellent-condition {
+    color: var(--color-blue-600);
+    background: var(--color-blue-100);
+}
+
+.badge-media {
+    text-wrap: nowrap;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background: #EBEDF4;
+    color: var(--color-muted);
+}

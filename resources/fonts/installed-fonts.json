@@ -1,0 +1,13 @@
+{
+    "averta": {
+        "600": "\/var\/www\/html\/storage\/fonts\/averta_600_c9e916b1446689b0d29bca915a80c315",
+        "normal": "\/var\/www\/html\/storage\/fonts\/averta_normal_61df0b74a71b8b7c734fac5f49d95318",
+        "bold": "averta_bold_d6da145c08667a382013590a7e4917bf"
+    },
+    "inter": {
+        "normal": "\/var\/www\/html\/storage\/fonts\/inter_normal_e6e15716185f56896ee583cfa48a63f1",
+        "500": "\/var\/www\/html\/storage\/fonts\/inter_500_8a9c11e93fcb7524676c950c13caa976",
+        "600": "\/var\/www\/html\/storage\/fonts\/inter_600_6f897da6246010f6a52dcfc6f6e0f627",
+        "bold": "inter_bold_beddae36579cd5a374969db40ed37552"
+    }
+}

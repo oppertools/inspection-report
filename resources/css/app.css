@@ -1,0 +1,20 @@
+@import './base/tailwind.css';
+@import './base/utilities.css';
+@import './base/tokens.css';
+@import './base/fonts.css';
+@import './base/markup.css';
+
+body {
+    font-family: var(--font-sans), sans-serif;
+    color: var(--color-black);
+    font-size: var(--text-base);
+    line-height: 1.25rem;
+}
+
+@page:first {
+    margin: 0 0 2cm 0;
+}
+
+@page {
+    margin: 1cm 0 2cm 0;
+}
