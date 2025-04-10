@@ -26,7 +26,7 @@ class InspectionReportPdfGeneratorService
             mkdir($directory, 0755, true);
         }
 
-        $request = Gotenberg::chromium(config('app.gotenberg.url'))
+        $request = Gotenberg::chromium('localhost:3000')
             ->pdf()
             ->outputFilename($filename)
             ->assets(Stream::string('style.css', file_get_contents(public_path('css/app.css'))))
