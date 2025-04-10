@@ -12,11 +12,11 @@ class InspectionReportController extends Controller
     {
         $inspectionReport = InspectionReport::findOrFail($id);
 
-        if (! Storage::disk('images')->exists($inspectionReport->pdf_path)) {
+        if (! Storage::disk('s3')->exists($inspectionReport->pdf_path)) {
             abort(404, 'Fichier introuvable');
         }
 
-        return Storage::disk('images')->download($inspectionReport->pdf_path);
+        return Storage::disk('s3')->download($inspectionReport->pdf_path);
     }
 
 	public function show(string $id)
@@ -27,10 +27,10 @@ class InspectionReportController extends Controller
 			abort(404, 'Inspection report not found');
 		}
 
-		$filePath = Storage::disk('images')->url(
+		$filePath = Storage::disk('s3')->url(
 			$inspectionReport->pdf_path
 		);
-		$zipPath = Storage::disk('images')->url(
+		$zipPath = Storage::disk('s3')->url(
 			$inspectionReport->zip_path
 		);
 

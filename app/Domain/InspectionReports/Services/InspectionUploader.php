@@ -26,12 +26,12 @@ class InspectionUploader
                     throw new Exception("Impossible de lire le fichier {$type} à l'emplacement : {$filePath}");
                 }
 
-                $success = Storage::disk('images')->put($storageFilePath, $fileContent);
+                $success = Storage::disk('s3')->put($storageFilePath, $fileContent);
                 if (! $success) {
                     throw new Exception("Échec du téléchargement du fichier {$type} vers le chemin : {$storageFilePath}");
                 }
 
-                $url = Storage::disk('images')->url($storageFilePath);
+                $url = Storage::disk('s3')->url($storageFilePath);
                 $results[$type] = $url;
 
             } catch (Exception $e) {

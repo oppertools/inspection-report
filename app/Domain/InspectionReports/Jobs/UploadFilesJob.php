@@ -50,8 +50,8 @@ class UploadFilesJob implements ShouldQueue
 
 	        if ($modelId) {
 		        $model = InspectionReport::findOrFail($modelId);
-		        $model->pdf_path = Storage::disk('images')->path($storagePath . '/' . $pdfName);
-		        $model->zip_path = Storage::disk('images')->path($storagePath . '/' . $zipName . '.pdf');
+		        $model->pdf_path = Storage::disk('s3')->path($storagePath . '/' . $pdfName);
+		        $model->zip_path = Storage::disk('s3')->path($storagePath . '/' . $zipName . '.pdf');
 		        $model->save();
 	        }
 
