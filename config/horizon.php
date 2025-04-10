@@ -166,6 +166,8 @@ return [
     |
     */
 
+    'enabled' => env('HORIZON_ENABLED', false),
+
     'memory_limit' => 64,
 
     /*
