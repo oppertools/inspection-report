@@ -7,6 +7,8 @@ CLEANED="signatures"
 
 mkdir -p "$OUTDIR" "$CLEANED"
 
+source /home/forge/scripts/venv/bin/activate
+
 if [ ! -f "$PDF_SOURCE" ]; then
     echo "Fichier introuvable : $PDF_SOURCE"
     exit 1
