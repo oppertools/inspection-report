@@ -16,13 +16,16 @@
         "laravel/horizon": "^5.31",
         "laravel/tinker": "^2.10.1",
         "league/flysystem-aws-s3-v3": "^3.0",
+        "mailersend/laravel-driver": "^2.9",
         "openai-php/laravel": "^0.11.0",
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/browsershot": "^5.0",
         "spatie/laravel-data": "^4.14",
         "spatie/laravel-pdf": "^1.5",
         "spatie/laravel-view-models": "^1.6",
-        "spatie/pdf-to-image": "^1.2"
+        "spatie/pdf-to-image": "^1.2",
+        "symfony/http-client": "^7.2",
+        "symfony/mailgun-mailer": "^7.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
