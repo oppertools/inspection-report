@@ -95,10 +95,6 @@ return [
             ],
         ],
 
-        'brevo' => [
-	        'transport' => 'brevo',
-        ],
-
     ],
 
     /*
