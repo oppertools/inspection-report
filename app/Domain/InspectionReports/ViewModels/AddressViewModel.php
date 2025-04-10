@@ -20,32 +20,50 @@ class AddressViewModel extends ViewModel
         return null;
     }
 
-    public function formatAddress(): ?string
-    {
-        if (! $this->address) {
-            return null;
-        }
+	public function formatAddress(): ?string
+	{
+		if (! $this->address) {
+			return null;
+		}
 
-        $mainLine = trim($this->address->line1);
+		$parts = [];
 
-        $additionalInfo = $this->address->line2;
+		// Ligne principale
+		if ($this->address->line1) {
+			$parts[] = trim($this->address->line1);
+		}
 
-        if ($mainLine && $additionalInfo) {
-            $mainLine .= ", $additionalInfo";
-        } elseif (! $mainLine && $additionalInfo) {
-            $mainLine = $additionalInfo;
-        }
+		// Ligne secondaire
+		if ($this->address->line2) {
+			$parts[] = trim($this->address->line2);
+		}
 
-        $cityLine = trim("{$this->address->postalCode} {$this->address->city}");
+		// Ajout dynamique de "Étage" et "Porte"
+		$floorDoorParts = [];
 
-        if ($mainLine && $cityLine) {
-            return "$mainLine, $cityLine";
-        } elseif ($mainLine) {
-            return $mainLine;
-        } elseif ($cityLine) {
-            return $cityLine;
-        }
+		if ($this->address->floorNumber) {
+			$floorDoorParts[] = "Étage {$this->address->floorNumber}";
+		}
 
-        return null;
-    }
+		if ($this->address->door) {
+			$floorDoorParts[] = "Porte {$this->address->door}";
+		}
+
+		if (!empty($floorDoorParts)) {
+			$parts[] = implode(' - ', $floorDoorParts);
+		}
+
+		// Code postal + Ville
+		$cityLine = trim(collect([
+			$this->address->postalCode,
+			$this->address->city,
+		])->filter()->implode(' '));
+
+		if ($cityLine) {
+			$parts[] = $cityLine;
+		}
+
+		return $parts ? implode(', ', $parts) : null;
+	}
+
 }

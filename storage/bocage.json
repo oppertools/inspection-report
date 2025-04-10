@@ -1,0 +1,2012 @@
+{
+  "id": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+  "object": "inspection_report",
+  "check_in_date": null,
+  "cleanliness": {
+    "state": "good"
+  },
+  "created_at": "2025-03-27T12:26:35.872895Z",
+  "date": "2025-03-28",
+  "deleted": false,
+  "display_name": null,
+  "documents": {
+    "check_in_comparison_pdf": null,
+    "inspection_report_pdf": "https://s3.eu-west-3.amazonaws.com/nockee-prod-secure-20230328101740401100000001/inspection-report/file_02zThI9oz5rZJbTn6boEjF/6abc8e80-652a-4094-82c4-b6d9de63e030.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYB4FOUEW2NZD7F4X%2F20250409%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250409T223621Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=dea3c7639167e80530d2e1671a69becca28293e9845e3cb121e44fd459b90732"
+  },
+  "hosted_inspection_report_url": "https://app.nockee.fr/public/inspection-report/irsk_02zThHYCmk6KEItLPDZ3HH-7qebrBEfEPazu2gvq59IYQi0bYfHMVZhCDerjNlICPaLDeg8mAmRyU35GoGiy34TgMo6Bycud6OkyZt2XgEKO0ZJMV",
+  "observations": {
+    "owner": null,
+    "tenant": null
+  },
+  "property": {
+    "address": {
+      "city": "Bruges",
+      "door": "B206",
+      "floor_number": null,
+      "line_1": "10 Allée du Bocage",
+      "line_2": null,
+      "postal_code": "33520"
+    },
+    "energy": {
+      "heating_source": {
+        "is_air_conditioning": false,
+        "is_district_heating": false,
+        "is_electric": false,
+        "is_gas": true,
+        "is_oil": false,
+        "is_other": false
+      },
+      "hot_water_source": {
+        "is_district_hot_water": false,
+        "is_electric": false,
+        "is_gas": true,
+        "is_oil": false,
+        "is_other": false
+      }
+    },
+    "features": {
+      "smoke_detector": "not_tested"
+    },
+    "furnished": false,
+    "reference": null,
+    "rooms_count": 2,
+    "surface_area": 40,
+    "type": "flat"
+  },
+  "rendering_settings": {
+    "footer": null,
+    "logo": null,
+    "primary_color": null
+  },
+  "scheduled_at": null,
+  "signed": true,
+  "status": "delivered",
+  "status_transitions": {
+    "deleted_at": null,
+    "finalized_at": "2025-03-28T11:02:30.560207Z"
+  },
+  "template": false,
+  "type": "residential_lease_check_in",
+  "updated_at": "2025-03-28T11:03:26.470987Z",
+  "workspace": "wspc_02zLysX2SBRMFwnel1rVyU",
+  "keys": [
+    {
+      "id": "200c2a50-45c0-4210-988d-ea9f7fac8eea",
+      "object": "inspection_report.key",
+      "check_in": null,
+      "comment": "Testée et fonctionnel",
+      "count": 3,
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "type": "principal",
+      "updated_at": "2025-03-28T10:56:04.030462Z",
+      "pictures": [
+        {
+          "id": "3b69f8ea-226c-431a-bd09-c67db4ec783a",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:55:56.267533Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/b3ad1c3670a83a410693a207261de357da708d42f25d8b353382b1bde0fabbe0/cdc7d72a64ecd392cd12ba7325490ff5/482a9a2b-e43f-4fc8-9a29-e5ae11d75d04.jpg"
+        }
+      ]
+    },
+    {
+      "id": "c4e26d88-e52b-4df8-a9ec-bcf5c21bd193",
+      "object": "inspection_report.key",
+      "check_in": null,
+      "comment": "Non testé",
+      "count": 2,
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "type": "pass",
+      "updated_at": "2025-03-28T10:55:41.558918Z",
+      "pictures": [
+        {
+          "id": "5497dcf8-3974-45ff-8dd9-88de71f26162",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:56:03.746390Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/2a29922c723b59b86c27a6c115a5133acd28b9cd3aec375d5775a9fcf36a7a05/343cf74ccfd07d398456c7e7fae68e2f/2a8abff8-b8db-4e15-be40-88be6e18f555.jpg"
+        }
+      ]
+    }
+  ],
+  "meters": [
+    {
+      "id": "3cb88c7e-0eb1-4f26-a130-0a3b12c3e9ae",
+      "object": "inspection_report.meter",
+      "check_in": null,
+      "comment": "",
+      "created_at": "2025-03-28T10:50:41.124852Z",
+      "inaccessible": false,
+      "index_1": 8226,
+      "index_2": null,
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "number": "16174240028303",
+      "type": "electricity",
+      "updated_at": "2025-03-28T10:52:18.590518Z",
+      "pictures": [
+        {
+          "id": "9beec932-a524-4c1a-855e-ffe68553842d",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:52:10.273337Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/5cac58db250a305233c5b34b7cba5dc63c65fc73753f938478d9ddb76a1b752d/426b608847f7bf5cc7ada3e686dcf07a/7e35ea41-288f-4af1-b426-11f53119a71a.jpg"
+        },
+        {
+          "id": "983c1c26-1c98-4a75-a322-2efb6465a525",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:51:45.076091Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/71a85cf7af550409627f4b114dc7831edc2bbbfc25914111d7cfba668a17095a/92dd4f03faae8dfb7db0231ce9fd4ff9/5fd763c4-28be-46fe-8445-b3f6113df4d5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "18c75772-d784-44f3-8ae6-9c90d861252b",
+      "object": "inspection_report.meter",
+      "check_in": null,
+      "comment": "",
+      "created_at": "2025-03-28T10:52:16.917372Z",
+      "inaccessible": false,
+      "index_1": 135991,
+      "index_2": null,
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "number": "12990185",
+      "type": "gas",
+      "updated_at": "2025-03-28T10:52:58.684409Z",
+      "pictures": [
+        {
+          "id": "d23ec742-dc81-4458-8e59-b68a74ffc693",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:52:52.767529Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/f75456d9a6455024ce881bfa39c7c6dff9df39dc7f5e01a4ff26e2ad7d5763fb/d88a577c6a14228be6dbbd31ff93d9f6/fe5c480e-8fb6-4424-96bd-46d60900ff6b.jpg"
+        },
+        {
+          "id": "8ab862c8-a1b2-4d23-b457-d20990cad542",
+          "object": "inspection_report.picture",
+          "created_at": "2025-03-28T10:52:46.534745Z",
+          "url": "https://p.nockee.fr/inspection-picture/720/e30=/3907d806d80ee130f0c9d0fd43313f5c5f69e9091f310f2343a4b360d48d8bed/d4a8ff2f2501c0365ac4e9b84fe6f6b5/b8c4c8c1-7a8f-4ad9-8b40-ef05bde931ca.jpg"
+        }
+      ]
+    }
+  ],
+  "pictures": [],
+  "rooms": [
+    {
+      "id": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+      "object": "inspection_report.room",
+      "created_at": "2025-03-27T21:22:20.857394Z",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "name": "Cuisine",
+      "position": 1,
+      "type": "kitchen",
+      "updated_at": "2025-03-27T21:22:20.857407Z",
+      "elements": [
+        {
+          "id": "cd524f0e-e9a8-4bad-8614-eef3d46161f5",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.667568Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Mur",
+          "operating_state": null,
+          "position": 1,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.529339Z",
+          "pictures": []
+        },
+        {
+          "id": "cce1ac88-668c-4359-8371-a8587b39b966",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Marron clair"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.688395Z",
+          "materials": [
+            "Stratifié"
+          ],
+          "name": "Sol",
+          "operating_state": null,
+          "position": 2,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T11:01:57.008119Z",
+          "pictures": []
+        },
+        {
+          "id": "dd6d70f5-8d42-4bd2-8bc8-2b3f5cb1bae9",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.715777Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Plafond",
+          "operating_state": null,
+          "position": 3,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.580706Z",
+          "pictures": []
+        },
+        {
+          "id": "a6c896db-a84b-41a8-9ae3-5b75a21f8093",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.742422Z",
+          "materials": [
+            "En bois"
+          ],
+          "name": "Plinthes",
+          "operating_state": null,
+          "position": 4,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.603076Z",
+          "pictures": []
+        },
+        {
+          "id": "5336c60a-934c-4403-a2c5-d66c2dd004df",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Beige clair"
+          ],
+          "comment": "4 tiroir et 6 portes",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.770506Z",
+          "materials": [
+            "Stratifié"
+          ],
+          "name": "Meuble de cuisine",
+          "operating_state": "working",
+          "position": 5,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.625985Z",
+          "pictures": [
+            {
+              "id": "8da8d3db-21fc-4ac6-952d-6a9d116bdcdb",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:15:18.133209Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/dcda6cf50b308b0261f12f72b7be5254afdb3c425c75697c5ecd3b378f48bef6/dd3d326574c2c35f07a18d217490a2c1/ceaeb70d-4038-4a5c-92a3-b643ae025633.jpg"
+            },
+            {
+              "id": "524b4f19-70be-4c23-913a-5657e2847393",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:15:10.294663Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/7136346f7cfc24390f0e4ce4c15860fcd8d802dd670a055c68601c470ba186a9/edb2519c212693d427c1ba1a569aa183/93a724a1-190d-4483-ac4c-ed61674d9c03.jpg"
+            },
+            {
+              "id": "a32d1d6b-50ee-4ad2-99a8-3f1e53d6d8f7",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:14:50.185056Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/ee93d0a8665001200eda2d86ee0d81ce0e93f22e0abec5244f789ba06c8365d6/f2e1948d4955202f5be967e53f52d84a/30ceb125-7590-4f3b-9726-ed0583cf16a7.jpg"
+            },
+            {
+              "id": "b9dfcd14-5241-4dc7-b933-44a230947ed8",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:14:39.991868Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/792f9bb3c30f4ffe3c10f37b0b8f2cb46b16cc3137f0a391845da79bd4bec001/4de49dc61338faa0bc56bbbe78eebcb4/a24f5d27-59ad-48b1-a92e-2fa1375ef7d1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "b9a79f40-cd09-4d21-a071-88affa807e46",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "Marque : Beko",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.795505Z",
+          "materials": [
+            "1 grille",
+            "Encastré",
+            "1 plaque"
+          ],
+          "name": "Four",
+          "operating_state": "working",
+          "position": 6,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:15:44.642815Z",
+          "pictures": [
+            {
+              "id": "1e8e7aaf-8f32-4057-a7a5-fb93d6500817",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:15:39.039878Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/b190ab487be186918ea0caf1418f34f7b7ac5e2573174b891c6c0513e68bb0e3/04ae4890d2ca3c4b67bc6bccdc7e2c9a/90fa97ad-5e01-421b-8d16-e1f9e1708abd.jpg"
+            }
+          ]
+        },
+        {
+          "id": "39b9b569-9bfb-4042-a136-1545cad7f4a6",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Noir"
+          ],
+          "comment": "Lumière non fonctionnel",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.827920Z",
+          "materials": [
+            "Encastrée"
+          ],
+          "name": "Hotte aspirante",
+          "operating_state": "working",
+          "position": 7,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:16:12.271291Z",
+          "pictures": [
+            {
+              "id": "80f8e9c6-1e0f-4d27-92f7-403dc26e99ce",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:16:45.330717Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/87e93d79347029bbc84331d0eb9a612f4168cab8f89120a602644293aa0f2237/df7a03bdd7fd9d3175aa656414e0dd43/aaead83e-d531-4fcf-9051-ac817b3a60f5.jpg"
+            }
+          ]
+        },
+        {
+          "id": "cccf8180-3eef-492f-adc3-850430f93c37",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Beige"
+          ],
+          "comment": "Joint OK\nRobinetterie OK\n1 bouchon",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.853296Z",
+          "materials": [
+            "Simple bac",
+            "Avec égouttoir"
+          ],
+          "name": "Évier",
+          "operating_state": "working",
+          "position": 8,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:17:28.889103Z",
+          "pictures": [
+            {
+              "id": "0ca9164f-59fa-4e3e-9532-537de7fc53e1",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:17:12.477676Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/7e8ac8a67d145d14b83c17af5e219846b465b23352b37e70ab6cc99626020493/0ab432f64e6a78e18d30a833598e02ae/eb863145-9164-40be-9116-d810701bea14.jpg"
+            }
+          ]
+        },
+        {
+          "id": "12692916-a8bd-49e1-8a25-05f3bbb5e160",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Gris foncé"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.912657Z",
+          "materials": [
+            "Stratifié"
+          ],
+          "name": "Plan de travail",
+          "operating_state": null,
+          "position": 10,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:18:39.595326Z",
+          "pictures": [
+            {
+              "id": "bfbec811-4fce-43c6-9982-5ce165654e9d",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:18:03.518091Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/02092914a9ded3abc256b45ef9af2dccbe425339b0f1678bd7656c898beb029c/3d7b7f0fe93f53f207a80145305e66c9/0573ceb7-c63f-4134-b797-3b78e0bb7981.jpg"
+            }
+          ]
+        },
+        {
+          "id": "586cd02f-dfb7-4066-b0e0-901221d730be",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "Marque : BEKO",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.932677Z",
+          "materials": [
+            "Vitrocéramique",
+            "2 feux"
+          ],
+          "name": "Plaque de cuisson",
+          "operating_state": "working",
+          "position": 11,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:18:45.074191Z",
+          "pictures": [
+            {
+              "id": "a6217319-7637-469a-9af1-331c48db618b",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:18:38.626936Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/f33ade1b3b89be7a624922f398abcffe91cbaf29c0325480cde48b21e2a1469a/d7742115ce07b7ba106b6db48dc679a2/5456dfd0-1955-4861-bf31-7a0032fe6360.jpg"
+            }
+          ]
+        },
+        {
+          "id": "23843d49-f738-4cba-bb69-1376b4f02846",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Gris"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:41.950429Z",
+          "materials": [
+            "Métallique"
+          ],
+          "name": "Crédence",
+          "operating_state": null,
+          "position": 12,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.655410Z",
+          "pictures": [
+            {
+              "id": "a8c8e973-1460-4b95-8d0c-eaa994b9bd9a",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:13:19.580929Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/137d4d2ef0eebc4b80875cb413677f828f40deee73872111cea7f6f2b2df12a5/2915e8e6eac3a75cbe6832633887688a/100d6dee-789e-443f-bba7-b0a75d3efb39.jpg"
+            }
+          ]
+        },
+        {
+          "id": "7fc5790b-0573-4e96-896c-6b386b92307b",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "1 judas",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:42.007639Z",
+          "materials": [
+            "Battant"
+          ],
+          "name": "Porte",
+          "operating_state": "working",
+          "position": 15,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:18:50.777769Z",
+          "pictures": [
+            {
+              "id": "b87fc915-8b64-44d9-9866-01af54f3546a",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:19:10.296199Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/f376d72a806cfe9e3d44159d765a7899137bc9d2b6def0a2fbc89b922925d80b/90bdfb9a13ee748208fb07b4b86ddf92/1315d622-c8bd-4198-b8f3-ddd61ddb2ec1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "0d69754a-8a81-44eb-bc65-5e6f267e2e97",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "Marque : Beko",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:21:00.555602Z",
+          "materials": [
+            "2 portes",
+            "Avec compartiment congélation"
+          ],
+          "name": "Réfrigérateur",
+          "operating_state": "unable_to_test",
+          "position": 15,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:22:41.699099Z",
+          "pictures": [
+            {
+              "id": "a1e3f67b-f2f3-4a1a-91f8-b8b5266fdbb7",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:22:35.807525Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/eaee9a036766bf8f07a300d545122567a59e046f24fda12cbb505a4ba4f816c4/867b751f95dc0cdc1f9fb2329e867c53/d6363a23-08bf-43ea-920b-50ba44840f77.jpg"
+            },
+            {
+              "id": "968d5526-b980-4cef-a234-7003a391433f",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:22:13.305937Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/ef3d9e7e772d474402b04f1da1d75176c9b29e26a4d7e95409ecfeac0451fbae/df02d9cb35d8a6959a65c7514f275f9b/b937e112-ed6f-41ff-8fdb-5416b643c390.jpg"
+            },
+            {
+              "id": "f1ba42a2-eb6e-43ac-a114-f0afc28a9b68",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:21:59.086907Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/48acc81d4f65dc14b1999ba7b29fcd94ee5022ef9b53c4bb8bfce7b29ccb462a/4bd5794e3109883d32efaaf34655bb45/a54fea54-6eaa-48ce-9697-3a3704babb3f.jpg"
+            }
+          ]
+        },
+        {
+          "id": "eacbf144-da32-4cda-9b9f-c0d9c698c4ec",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:11:42.041653Z",
+          "materials": [
+            "Encastrée"
+          ],
+          "name": "Ventilation (VMC)",
+          "operating_state": "working",
+          "position": 16,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:19:15.881825Z",
+          "pictures": [
+            {
+              "id": "3ae6e9b8-a0d8-4528-ae96-df1767657fbf",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:19:26.340679Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/188e44542847367ecd64e844a5c44df33e946b845014c84e11b83d367e331050/6188142f548a6e4308aac1ef3f81f90e/4d2d37f1-4982-4159-85ac-ddbbd5b742dd.jpg"
+            }
+          ]
+        },
+        {
+          "id": "c7903229-51d0-45cc-8c37-fc5dfcbacdb6",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:21:00.572386Z",
+          "materials": [
+            "Douille DCL"
+          ],
+          "name": "Éclairage",
+          "operating_state": "working",
+          "position": 16,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:21:44.464486Z",
+          "pictures": [
+            {
+              "id": "8e0d4a2c-1344-4fca-b5a8-7049b17482ab",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:21:38.521088Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2bc33b3bdf55f16acf716817cb06c64d42ea81ec85e726bad69c27a034bed453/416e45975d3e3569e25ef71d07856320/117c7516-6f41-4e80-9e21-ef212b3f7629.jpg"
+            },
+            {
+              "id": "4c244eff-7ed7-4813-98ae-893b0b9f521d",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:21:31.789110Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/367937774033a065b1ad734b2b9fd8899e6ee13b8dc65864cd9c7cf7d8f91cde/73497728ee159ca1d1c0a16b183bf012/56b3fefc-d957-4a87-b708-d31d4dc6e251.jpg"
+            }
+          ]
+        },
+        {
+          "id": "6c9e67d7-1a49-4939-9262-06005a15be81",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:19:42.609859Z",
+          "materials": [],
+          "name": "Thermostat",
+          "operating_state": "working",
+          "position": 17,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:19:57.319175Z",
+          "pictures": [
+            {
+              "id": "2cd9b70c-abda-4e61-a379-421e47158fbe",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:19:57.060324Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/922e2b58ae781297fee1307b4e671508b93c0b0e6446078128d1c082f7940f89/c3d6633f73ca11efff96a6536c045957/95ace338-1dec-439b-acd1-5487db7d1959.jpg"
+            }
+          ]
+        },
+        {
+          "id": "a8af0bba-7be5-4033-b6da-84375d1ed24c",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "Avec 1 chaudière",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:15.382999Z",
+          "materials": [],
+          "name": "Placard",
+          "operating_state": null,
+          "position": 18,
+          "room": "35ca1e32-5177-4bc9-855e-ae30dd443027",
+          "updated_at": "2025-03-28T10:23:32.195023Z",
+          "pictures": [
+            {
+              "id": "fdf78199-8673-451a-b318-877b4aae8606",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:24:19.054583Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/061bf2c8adb64643ffb63cb764b1702d1a780628b5552d31ca0ced3a60219a71/f49ca34c9ef506aa9ba28d115b34b479/d6706f30-8a09-4620-95e1-6fd77d91bcb7.jpg"
+            },
+            {
+              "id": "09ed5e71-f61a-40f3-b715-b2326f2d2c0b",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:24:03.743095Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/0ea2244fff7e4f4a4ec225c40d656d8ae62973fbf77893a5f678d203eddafedf/cd866335544b3c27ced7dd0dbb071888/4032b2bb-9a6e-4204-b6a8-8b0a5e46d2f2.jpg"
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+      "object": "inspection_report.room",
+      "created_at": "2025-03-27T21:22:26.051446Z",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "name": "Salon",
+      "position": 2,
+      "type": "living_room",
+      "updated_at": "2025-03-27T21:22:26.051460Z",
+      "elements": [
+        {
+          "id": "5452f1bf-2eb2-4220-bca3-7a495f54296b",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Beige",
+            "Blanc"
+          ],
+          "comment": "",
+          "condition": "good",
+          "count": 1,
+          "defects": [
+            "Traces de repeinte"
+          ],
+          "created_at": "2025-03-28T10:23:04.156163Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Mur",
+          "operating_state": null,
+          "position": 1,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:49:08.684799Z",
+          "pictures": [
+            {
+              "id": "00a37c22-04c6-4fad-8e1f-6342344cb788",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:24:54.344527Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/eaeae9ea7f9de8c97e01821438ed3d68276daafa5c41b98ae0ed35c7ffa17df2/e8209ec7d5b11e4887eaf5a7b73a8c0b/33134df9-7875-4519-8c28-46f4735e9250.jpg"
+            }
+          ]
+        },
+        {
+          "id": "b83544ed-e5fd-462b-81cc-58ed3c5b2556",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Gris"
+          ],
+          "comment": "",
+          "condition": "good",
+          "count": null,
+          "defects": [
+            "Éclat vers baie vitrée",
+            "Accroc vers radiateur"
+          ],
+          "created_at": "2025-03-28T10:23:04.176466Z",
+          "materials": [
+            "Stratifié"
+          ],
+          "name": "Sol",
+          "operating_state": null,
+          "position": 2,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:27:36.564726Z",
+          "pictures": [
+            {
+              "id": "4e19f079-83a0-45ef-95fb-6f63255b56d8",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:26:57.532342Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/86dafb1636aa6f40efb3d2b4e83dadcabf96f4d26daa8967b2510c94cc454469/da9497a233d17d33d25fccfd157b4092/5d03c15f-1d06-4c22-a1b6-71cd70f41c3f.jpg"
+            },
+            {
+              "id": "ac8e0173-dc2c-4dcf-b498-3be64961c74e",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:26:29.354226Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/35fc2025c7d9b255db646dcce46216c1f762e184d8265ea6fe61710ef22f009c/bd662e56a1872a15ac50c6a93c12f0c9/9e5e6009-f4fb-40c2-9dfe-04514dcf09a1.jpg"
+            },
+            {
+              "id": "3f534809-50ac-4c1a-99d8-ef1c90f0ffcb",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:25:59.027749Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/38e54f64bab3e28eb03ed18e54a843d094ae134a3075a46bc490d29e7e2e99b5/677f3a28a78b251e7f3c7786a44fb0e8/8b165504-85c6-4146-af63-77d2ecafdcdf.jpg"
+            }
+          ]
+        },
+        {
+          "id": "eeb4fb20-6026-4c4b-98e5-8d5d4a7a6ace",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.200644Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Plafond",
+          "operating_state": "working",
+          "position": 3,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:49:08.704218Z",
+          "pictures": []
+        },
+        {
+          "id": "6201bb60-ad26-45c2-ae4a-e362db47f859",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.250004Z",
+          "materials": [
+            "Peintes"
+          ],
+          "name": "Plinthes",
+          "operating_state": null,
+          "position": 4,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:30:08.160430Z",
+          "pictures": [
+            {
+              "id": "d0232b4d-bec7-4bd7-9524-d4156df9621d",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:27:36.295805Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2c0f44c73c97100c26d8a4b1cafc37b50d6be1ed81876759860b7ef793a6a73f/9dd174ad6f75d780b36badd65653b6ca/892e0fe1-4c48-43f5-b6ba-f231114e9b2a.jpg"
+            }
+          ]
+        },
+        {
+          "id": "f286b2ae-fe39-44aa-a603-823392d66b4a",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Poignée légèrement dévissée côté chambre\n1 trace sur la poignée",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.277459Z",
+          "materials": [
+            "Coulissante",
+            "Double vitrage"
+          ],
+          "name": "Porte-fenêtre",
+          "operating_state": "working",
+          "position": 5,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:28:11.281165Z",
+          "pictures": [
+            {
+              "id": "40d61015-347a-4939-ad42-2e9e35939606",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:28:25.148557Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/cc9515e8714bc6a2d5bb7ce8829e463d5566394a2d38ce9e098117280316a328/a698d72202c87543866a2db540eef81d/530b8180-81f7-469e-ba76-cc9b74aea1ae.jpg"
+            },
+            {
+              "id": "02aa2d45-5c3f-44aa-8fd7-66e84d25d7f4",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:28:10.993952Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/5ffb43082074b4fa9ee9d498d620b5f323126cdab99ec9807b8d9fdc02424f0d/6501a35298a498d388aba9d2f3f94453/f0bf5af1-963b-4365-8d45-5014d062800a.jpg"
+            },
+            {
+              "id": "3e5fb9c2-dfaa-4419-aafe-90b1ee545e82",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:27:57.740011Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/98191bacdf45bb1509ee28726c0ecceafe86f3f2709f6fe62c9fb23ec600d4e1/cf4ef76c3d8182226c9e12d72b8f7ad1/b39a2d94-5249-45ef-8cc1-ecd1598ae531.jpg"
+            }
+          ]
+        },
+        {
+          "id": "e0544953-084b-4bb8-af61-f747045ff24f",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.302293Z",
+          "materials": [],
+          "name": "Placard",
+          "operating_state": null,
+          "position": 6,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:28:37.100826Z",
+          "pictures": [
+            {
+              "id": "6b612c0c-2cdd-4de7-9769-10b4a0d1e345",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:28:36.663959Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/365b7169edc33061881e19b11d6106af89aa8e0f728a3c4a640db589f28961d5/4bbfa42c1178c59d6422ecdc9c952297/37092d1c-009d-4aeb-ad72-1e257ccec3be.jpg"
+            },
+            {
+              "id": "411f5c3e-6e01-45b8-89fb-3a486ae94169",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:28:29.035704Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/314517d2b2ef9019cf4b4dcc95df1217d3f36dfa075f846aaa88e5308ba83e99/1340aa8ff24362857a76541db31a75fe/bd091ae6-be25-43b1-8eb8-3e84d1033539.jpg"
+            }
+          ]
+        },
+        {
+          "id": "496cc040-6c92-4796-90d1-a226b9f281d1",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Indicateur gradué absent",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.335838Z",
+          "materials": [
+            "Électrique"
+          ],
+          "name": "Radiateur",
+          "operating_state": "working",
+          "position": 7,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:56:35.795479Z",
+          "pictures": [
+            {
+              "id": "2b728ce6-ac92-4520-8b12-a7465b27d5ee",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:28:50.635237Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/36dc44b6ad6c34631ef50516c216177532a774887673844eddd274aac0c8d616/deb21a3a71e84a3f56f842b95c0c1847/3592d28d-b209-4c7b-b25f-b7b009ca0ba2.jpg"
+            }
+          ]
+        },
+        {
+          "id": "92c49a0c-19aa-4116-8278-d80210dbb678",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:23:04.435906Z",
+          "materials": [
+            "Douille DCL"
+          ],
+          "name": "Éclairage",
+          "operating_state": "working",
+          "position": 11,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:29:51.843104Z",
+          "pictures": [
+            {
+              "id": "3e5ba276-9a54-402c-bb0b-258e96abfd26",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:29:45.780476Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/af46fde5f391874ce5e59138e81bf2c9e2db7c9f7cf94645d08d6cc9290956e4/8580c30f910591e286ec8f98b156928b/0fbb8a1f-3c32-4c39-b986-50260a5c96db.jpg"
+            }
+          ]
+        },
+        {
+          "id": "0fbbffa2-3adc-40c8-a64e-bdc1cf17caf4",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:49:24.782014Z",
+          "materials": [
+            "Électrique"
+          ],
+          "name": "Volet",
+          "operating_state": "working",
+          "position": 12,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:49:30.246375Z",
+          "pictures": [
+            {
+              "id": "c013f8c1-d75d-4d9f-b2a8-b0235f302558",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:50:10.490197Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/e59151f610081b77da16a6cbd9094f665fcdce99b33406749fe07e399305b81b/7d2afec00b531d36a4ae0f9506421f92/8aa21fad-aa06-4759-8d7e-f51473563aa2.jpg"
+            }
+          ]
+        },
+        {
+          "id": "b31aa901-391f-46d9-b8fd-e67675cfcb21",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:50:15.973102Z",
+          "materials": [
+            "Visiophone"
+          ],
+          "name": "Interphone",
+          "operating_state": "working",
+          "position": 13,
+          "room": "15858dbf-d464-4f67-b194-9ccebd867fbd",
+          "updated_at": "2025-03-28T10:50:35.561800Z",
+          "pictures": [
+            {
+              "id": "2bd5e2ea-42ba-4e9e-8f3e-c0c0c2df192b",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:50:27.622383Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/e5b4698907f3f0c849e5dc47cb888dac228e3ab8ab7845e7ce46a5e8715e4da2/3e9adf42c62626440642875003ff92c8/4919adef-4e36-42cc-9ac8-da1306901f5c.jpg"
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+      "object": "inspection_report.room",
+      "created_at": "2025-03-27T21:22:36.313162Z",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "name": "Salle de bain",
+      "position": 3,
+      "type": "bathroom",
+      "updated_at": "2025-03-27T21:22:36.313175Z",
+      "elements": [
+        {
+          "id": "8c750710-9325-4c8b-a71b-14c4f9d546c5",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Gris"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.208325Z",
+          "materials": [
+            "Carrelage"
+          ],
+          "name": "Mur",
+          "operating_state": null,
+          "position": 1,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:38:45.019002Z",
+          "pictures": [
+            {
+              "id": "8862fe67-7c3b-4081-b31b-03ccfa60a928",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:39:20.315911Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/7fd1d6f1dc4c70f40e40ef0001350e881208b96f5a7315f2cc4ba932e0bf4a19/45925b3d7e2d6a12837f60a88bbaf444/b748bf75-8cc2-442b-a7ca-c6135b6f97cd.jpg"
+            },
+            {
+              "id": "224adf8a-8ca1-4f27-a1e1-7a17694d0615",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:39:11.964034Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/4f9ce3be6001b8f60620eb0d5ea784eafd473c0c8e51211ed6efa5ddfa4d5c6c/aab5c5e21227e76080044181d7b70eaf/577deb95-e800-49d0-b9fd-b8595280f1bc.jpg"
+            }
+          ]
+        },
+        {
+          "id": "1cfde474-a499-48a5-8158-1e8487ab78a4",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Gris"
+          ],
+          "comment": "Quelques traces blanche au abord des murs",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.225267Z",
+          "materials": [
+            "Carrelage"
+          ],
+          "name": "Sol",
+          "operating_state": null,
+          "position": 2,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:47:58.613015Z",
+          "pictures": [
+            {
+              "id": "549d4915-8356-4172-aab6-c95d874f8257",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:47:31.349010Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/b1d91165ea3eec12b2e5a5ad6392e57db0fb74c0ffab0517359df70ddd179827/90f1eb91e0a59c7a6fb936e6b04decad/cfe835a6-df3d-4bcd-8ede-f5097d2db132.jpg"
+            },
+            {
+              "id": "5b8b9436-56b4-4340-9c0c-0dfd3189082d",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:47:10.609647Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/de8f9f78ca9358bab0cbe27922aabaa70b0e77db718528c7b589c84fe98ba960/5dec7cfe771ffa0fd7bf742e4d26b6c1/d8c70131-8bc3-4c60-97d7-e5e695059c45.jpg"
+            },
+            {
+              "id": "b8710194-293c-41d7-b758-336b041fb7a9",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:40:11.124762Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/10f8e3ddc7e80b86756370c37ac1c285f7e91283bd1fe6e78827a8a65219e5e2/5d5b1ac01fc7d7f7bba895a89bc29faa/b2da7cf7-484a-41d8-bb2c-1243d7d0b357.jpg"
+            },
+            {
+              "id": "493fcb55-6449-46e1-9bb3-97e0a1e53e92",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:39:59.140880Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/d1de7942387e0df9316e5da548344467aca327cb8c8fad4b41ef602569a53808/1d0ff8390c66910e1a3797c7e800f4cb/6693b27e-7bc7-451e-a4fc-a5bbf666e7cc.jpg"
+            }
+          ]
+        },
+        {
+          "id": "18c5765e-d25c-4dea-b13b-c8132fb790a2",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.240115Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Plafond",
+          "operating_state": null,
+          "position": 3,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:40:39.105861Z",
+          "pictures": [
+            {
+              "id": "985356ca-5b5d-4090-9cd1-cd5d3bf55581",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:40:20.074478Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/a7b823c605430c235107b541eb1fd38e9ceb32ebf58e928b8747c7c88ba46a4a/d0960fa58eda145f7b5a187cb0592e24/53667408-2cc7-43fd-a339-dad228259c3a.jpg"
+            }
+          ]
+        },
+        {
+          "id": "5893efaa-7d9d-4a29-bb2b-4260f67bdfe1",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "1 étagère\nÉcoulement OK\nBonde OK",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.257776Z",
+          "materials": [
+            "Receveur en résine",
+            "Porte coulissante",
+            "Poignée de maintient"
+          ],
+          "name": "Douche",
+          "operating_state": "working",
+          "position": 4,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:46:30.830070Z",
+          "pictures": [
+            {
+              "id": "a0920e7a-caae-42c7-a0a6-ed8f071c4085",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:41:48.657953Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2c7cd8ea3855bc1e9ae3cf9d377ac0b02d0da8a2c13c2a2df6db8e3d03e924dd/63408865aa6b04a37af736d8bb3c9d6e/4349d824-5db3-4c0b-9ccf-81b1d8d6c2a5.jpg"
+            },
+            {
+              "id": "1083135a-9c1a-4937-a15d-3e489ae89acc",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:41:34.066089Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2797f0f5d1532fb1a827f400a093cc740b7837673eaa8ba784c93dcbc4b3bd0f/e4d560f036dfa7171d3828798aeefaa3/2ddd75b2-bcfb-4963-8aee-54c0630051be.jpg"
+            },
+            {
+              "id": "3c782718-9e09-486e-ba40-d2d306654080",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:41:07.971882Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/fa621770d8317ca9b4020b8bf544cab6a4eb0f70dac2ab0f5cea097d32960ee1/a8728aef0587e9798c3da62e0298e545/ed838035-9018-4e8b-854c-e36da4673eeb.jpg"
+            }
+          ]
+        },
+        {
+          "id": "76e09dcd-ef37-4fcb-8945-888d706e465b",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.275324Z",
+          "materials": [
+            "Mitigeur thermostatique"
+          ],
+          "name": "Robinetterie",
+          "operating_state": "working",
+          "position": 5,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:42:40.406632Z",
+          "pictures": [
+            {
+              "id": "a9b53126-dbca-4cb9-8e34-91307566df7e",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:42:39.913246Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/5cff490437a50caf3645f4fe86d31d96e9d93ecf998cadbab6c57ff7e5babf31/8a2435237c3b5d42581be870a3976f10/4e091362-e0d2-461f-818c-6040e0f80137.jpg"
+            },
+            {
+              "id": "cace36e8-2f04-400f-a609-7dd3f98dacfc",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:42:17.977580Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/03bd327a8e16c6b31da2cf7efebf7324fc4941577040906d80d0a68ef0be76e4/3e6c0638db8589d804b4a3dc38d0ec2a/fe058862-4e30-4bb4-8ef0-2573a2ebd0d0.jpg"
+            }
+          ]
+        },
+        {
+          "id": "f19c033b-b55e-4467-8783-f7e52b22370d",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.292701Z",
+          "materials": [
+            "Électrique"
+          ],
+          "name": "Sèche-serviette",
+          "operating_state": "unable_to_test",
+          "position": 6,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:44:32.219780Z",
+          "pictures": [
+            {
+              "id": "921bcb88-ba35-4fa3-9c15-b73254c48f7c",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:43:14.562637Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2d0f5ff6cf0fce9bdeedff6dea079cada1c1a210d38dd9cb57132f201a7d1270/bd5db11882ed0f7f36c8d396016c1ab7/55e48b20-c652-49a6-8ba5-c0c57d8c3021.jpg"
+            }
+          ]
+        },
+        {
+          "id": "0b4a2b1c-f61b-43d7-9582-9e9c73d8abd0",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Traces de coulures sur le derniers tiroirs",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.310964Z",
+          "materials": [
+            "2 tiroirs"
+          ],
+          "name": "Meuble vasque",
+          "operating_state": null,
+          "position": 7,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:44:32.239127Z",
+          "pictures": [
+            {
+              "id": "9f695a03-6ddc-4bfd-984e-c4216688fc02",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:43:51.722715Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2efcd5d8439ba4d2a3116c7804c55f7ced13bac4b19546cc302c4fb5c0760cdc/ac5e4ef682cbc0be2fe905d9a471d400/05e53b1a-919b-496e-a984-57ceaa92205f.jpg"
+            },
+            {
+              "id": "142c62d1-6a27-4e9b-9943-adc12cb04748",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:43:41.667094Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/a31c9a3030ddcbf027d4c73c9fc796ec22ca683ee373b49d6718b5d447822d44/e8257ce9b1e13e0ffe96b381942cc4b0/591e9e81-c540-4589-9d1a-be2ef75bbb79.jpg"
+            },
+            {
+              "id": "1721cef6-c276-4b69-aab3-9278ffe22ba4",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:43:32.166217Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/0fddc023f2627b151cdcafb80e0507c73e2a04f6775f5e8d2e64ea2877ee8dcd/3773486724a2385696eb1c79578b1b7e/78cf1dd8-14bb-4e67-9880-9075982ce688.jpg"
+            }
+          ]
+        },
+        {
+          "id": "7f15f08c-cc21-46ee-9546-7319b65090aa",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Robinetterie OK\nÉcoulement OK",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.329559Z",
+          "materials": [
+            "En céramique"
+          ],
+          "name": "Lavabo",
+          "operating_state": "working",
+          "position": 8,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:45:33.350598Z",
+          "pictures": [
+            {
+              "id": "07b5a4ae-cef9-47fb-b76a-2ee670d06e24",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:44:06.249549Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/fa208031ca928c92bf5f3e959ee3e1bc515d4c024e8e4b534dbf59c916e83425/bbc8f5f01b858a0a2689750c51efdb12/dd19609d-4995-4d6f-81ad-174bed9ac748.jpg"
+            }
+          ]
+        },
+        {
+          "id": "fb9a485b-84ab-4290-a739-e34ac01e5273",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.349012Z",
+          "materials": [
+            "Éclairage intégré"
+          ],
+          "name": "Miroir",
+          "operating_state": null,
+          "position": 9,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:45:33.378667Z",
+          "pictures": [
+            {
+              "id": "87c77ba1-954f-41e6-a3ea-868fb1fd97cb",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:45:03.314704Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/20b6b3018a493149cf0a940a8c3c132813c1a4a0abc16e5b28a7c83b1e56b7b3/5597f334fe82bf564bdadcbddb9342aa/b59ba18a-9b21-4e31-a9dc-23c2cff922cd.jpg"
+            }
+          ]
+        },
+        {
+          "id": "c648a299-d9bb-4992-95f8-13aea273e3dc",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "to_clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Abattant mal fixé\nChasse OK\n1 brosse WC\n1 poignée de maintient\n1 porte papier WC",
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.388873Z",
+          "materials": [
+            "En céramique"
+          ],
+          "name": "WC",
+          "operating_state": "working",
+          "position": 10,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:57:51.522782Z",
+          "pictures": [
+            {
+              "id": "50f41b9c-690b-4594-8777-7fb57755746c",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:48:51.868640Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/a34e0785bfb6ff76f978a7c1f4b6fb723236b01e87cfc84c78d82d4a9bb08238/988f45fc01ed83279a35dbd17cd9cd25/1abee3e1-8806-4eb8-bf4e-4a0677209dfb.jpg"
+            },
+            {
+              "id": "6bfc5995-0cf3-477c-be88-34de0d517058",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:48:27.240272Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/36db47857a320e393ba84f0d32e8290e59350e079662a979a069c719b3b148f7/dca686ac82bdbdc5d4e482fe3799efc9/81f2a093-21f8-4de6-9011-1390bdd8b57a.jpg"
+            },
+            {
+              "id": "91e7d67c-106f-4738-b840-c5a1b9d732e3",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:45:26.783882Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/346dfe431c23ad536f9c3e82cd61ad119132f0d88db8bbbb11eb8ecafcaa40bf/d7ae8bcbac83677c41c8eb9f3800d2ce/82a60877-06af-4e19-bb95-a9f4f3ab9619.jpg"
+            },
+            {
+              "id": "6d8266e5-770a-425e-b86d-005dc379924b",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:45:18.810903Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/c3d95e6e91b9663d064fbf6b7161747216993e7ae89c0d0264c2d3db0ca75f4d/e90ad7338954fdee7a74964e197deb7b/03dcfec9-08ab-4018-bca5-cd8fdb61fc2b.jpg"
+            }
+          ]
+        },
+        {
+          "id": "33b87678-3400-4a92-a854-07129d4d4114",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.450055Z",
+          "materials": [
+            "Spots"
+          ],
+          "name": "Éclairage",
+          "operating_state": "working",
+          "position": 13,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:47:58.640493Z",
+          "pictures": [
+            {
+              "id": "e6846495-fbc8-4999-aa70-983b6a20b7ad",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:47:58.370406Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/3fe7bd66e1d8f212c9b56e6f078f5a60a345890217e46bf0149ca0b2293f7ebe/2a027c2488a54347c67e63fa42820c0e/3e8efbce-a87f-4228-b1c5-6d54c539f1a4.jpg"
+            },
+            {
+              "id": "010a8ad5-9b81-4f93-a705-322500350aea",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:45:33.088165Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/c1ff7037e3988380ed32fb4e50ab62bb8d6eee6032b89d643cf7144047723a33/db36341d0cec3cf78470c80a8090ace9/0829569f-8607-4812-a2f7-8f067df6e4ad.jpg"
+            }
+          ]
+        },
+        {
+          "id": "9a42058b-e769-49f6-95e3-9abd8e16afc6",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:38:39.514939Z",
+          "materials": [
+            "Battant",
+            "Avec verrou"
+          ],
+          "name": "Porte",
+          "operating_state": "working",
+          "position": 17,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:58:48.182680Z",
+          "pictures": [
+            {
+              "id": "cba38569-4e29-4cb8-8258-d91143c337f7",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:58:42.507131Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/53c04aa348c149b1c65a0b9a40798ef70bbc9849fd2069dd4beefed6eb2fbaef/020f8258946efa02c2b28ce022a2da5b/912a49de-2afa-4522-a386-dfd25c23a74f.jpg"
+            }
+          ]
+        },
+        {
+          "id": "dcc7c6a5-3865-4ba1-bfd0-86922622b553",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": "Légèrement jaunis",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:42:45.824269Z",
+          "materials": [],
+          "name": "Pommeau",
+          "operating_state": "working",
+          "position": 20,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:42:45.824281Z",
+          "pictures": [
+            {
+              "id": "28a34bda-e6ca-4270-a667-560d8491b1f2",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:44:31.766894Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/c0766659011e3ba0ec24902e7c377e0e35f2ba22539e0040b2ea256e015cad2e/e48f142eebe2b406ebed313304cd96e4/fa26683c-0b4a-42a7-88ad-624bf1b4aecb.jpg"
+            }
+          ]
+        },
+        {
+          "id": "56afa8e4-442f-4862-9c08-bb5074c2b094",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "to_clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:47:36.916034Z",
+          "materials": [],
+          "name": "Ventilation (VMC)",
+          "operating_state": "working",
+          "position": 21,
+          "room": "c04e4ffe-5230-4416-a951-879cc9980d9c",
+          "updated_at": "2025-03-28T10:48:13.124743Z",
+          "pictures": [
+            {
+              "id": "cedebae4-7d73-4f0f-ba7b-96ff3d691216",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:48:12.853858Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/5e9ff8c1749208799448915745c5b6e1b364f77e001d284f19d62472259574d8/e869186c790649de5c8cf38efaadea87/97edbd07-be1a-487d-9d0f-791ebe16830a.jpg"
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": "72761146-5280-4d38-b326-12fab3715ecf",
+      "object": "inspection_report.room",
+      "created_at": "2025-03-28T10:11:04.863276Z",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "name": "Chambre",
+      "position": 4,
+      "type": "bedroom",
+      "updated_at": "2025-03-28T10:11:04.863289Z",
+      "elements": [
+        {
+          "id": "bfbbf95c-4e6c-4643-b193-56fe2b32b101",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:29.879542Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Mur",
+          "operating_state": null,
+          "position": 1,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:32:57.499635Z",
+          "pictures": []
+        },
+        {
+          "id": "82eec2c2-6563-4c95-bfcd-7aeaad9cc9ea",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Marron"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:29.903022Z",
+          "materials": [
+            "Vinyle",
+            "Aspect bois"
+          ],
+          "name": "Sol",
+          "operating_state": null,
+          "position": 2,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:33:19.802543Z",
+          "pictures": [
+            {
+              "id": "ebcab64a-bd35-440a-82b9-da2bbc05311a",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:33:58.549062Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/05ed2ed7bb6674b9455b7332b51d7a052c49f0a22e477b818d919c6887999024/ddaa9249e2088aa3e5f30e875183b70f/8ef8ed8b-c0eb-4cca-9786-83d0de9728fb.jpg"
+            },
+            {
+              "id": "696942c4-2c6e-4b27-b85e-e21339f89ad1",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:33:47.749184Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/d4c9b547235372b5e2156e8269251b01e3754c7781afe6ec18d7bbe9f6d8c9f5/f3b159331b9695e1cf3223c0b9a2d2dc/c25cbd10-b408-4829-9be2-92c821d28d8e.jpg"
+            }
+          ]
+        },
+        {
+          "id": "e1763687-1133-49ac-98e9-2a65fe6f73eb",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:29.929829Z",
+          "materials": [
+            "Peint"
+          ],
+          "name": "Plafond",
+          "operating_state": null,
+          "position": 3,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:34:07.137774Z",
+          "pictures": [
+            {
+              "id": "364b9cac-cad2-42ea-8151-8132f4c9b3b4",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:34:06.733679Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/75eaa9207e83df4746cccf3934eba85bd08f57ab4c39197599a2a2a7219bc182/450fdf445b6e3140b2165444b0eb0f94/87b7468f-0498-46e9-b504-86edd19e5232.jpg"
+            }
+          ]
+        },
+        {
+          "id": "e1128e84-8f1e-439b-9e40-3d0c86dc9623",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:29.951716Z",
+          "materials": [
+            "Peintes"
+          ],
+          "name": "Plinthes",
+          "operating_state": null,
+          "position": 4,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:34:07.158219Z",
+          "pictures": [
+            {
+              "id": "9a16ba19-ffab-49bf-a185-9da9b4c10db2",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:34:27.502097Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/e02b142e0eef2f6f267f16faaad8db5ace85cc401f90f3fec10d9db7306e4e01/9e7509f6dd3d5d9a6b4dfba057dacbd7/13f1ced9-7d8b-46f7-b9c3-1ddc6324a7b2.jpg"
+            },
+            {
+              "id": "11731538-2e5e-4bef-8443-95ee7d0f65ea",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:34:23.120186Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/7adc3c003038cfe5f06e7176dca84aadf2276f07457559190e806464f6d05580/1c096d963aec1307d64ed3d12f6964a8/15f6102c-5f2f-44fb-85d1-abbdc555c99e.jpg"
+            },
+            {
+              "id": "6a3df246-eca7-4b11-985f-67e48c0d7112",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:34:18.460085Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/5fea8d26bb60cc6cafd57ce35cca11bdf0078185f47ff9df8770cb3f34210320/91c40cf9f668aaccbf0fa5db49c34fc6/9f63adef-db6d-42a3-8374-69ec98c080ec.jpg"
+            }
+          ]
+        },
+        {
+          "id": "5bf183fe-c55e-4bb5-bba9-a9ddea405924",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": "Poignet qui ferme mal",
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:29.974943Z",
+          "materials": [
+            "Double vitrage",
+            "PVC"
+          ],
+          "name": "Fenêtre",
+          "operating_state": null,
+          "position": 5,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:35:05.883417Z",
+          "pictures": [
+            {
+              "id": "185158c8-913c-440e-8adf-54e4c9cef278",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:34:58.958327Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/b12f67cdc678c4699f44c90f6aa1b841cd351dbd4b4b42330f082a1cb545d1fd/31961fe3cd11c178ca1d17c1977e9258/2c0e22e7-1960-4ce7-99dd-1c078315d963.jpg"
+            }
+          ]
+        },
+        {
+          "id": "53581af4-e8ba-48a1-931c-8fcc6038abc5",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:30.000040Z",
+          "materials": [
+            "Électrique"
+          ],
+          "name": "Radiateur",
+          "operating_state": "working",
+          "position": 6,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:37:26.147334Z",
+          "pictures": [
+            {
+              "id": "30825588-ac2f-45bc-a85e-65b242c4cb03",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:37:40.193256Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/3f6670264bbd0d07a1e9def1c686731ed924a2c4920d3b16e1750a06e9105055/f72c97e6767fa09b6764bbe94572bcf3/6f26b0a1-eb91-41ac-a2ed-9c43e93d70a5.jpg"
+            }
+          ]
+        },
+        {
+          "id": "ead5f2b1-70f0-407c-8963-8c82826756df",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc",
+            "Beige"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:32:30.082582Z",
+          "materials": [
+            "1 vantail"
+          ],
+          "name": "Porte",
+          "operating_state": "working",
+          "position": 8,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:37:26.171247Z",
+          "pictures": [
+            {
+              "id": "7e9f5eee-d8be-443a-9271-f55ca6725fbc",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:37:20.556347Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/9b3af7acab737798f884028f9948a7bdb1cb5db480c738f6801d96e2f0f2810a/ea2c987ec6e43d109bf91c78443a76de/792b2a11-8a80-4d66-a3ab-2bc10798d96c.jpg"
+            },
+            {
+              "id": "b69dfd17-01db-4435-85cd-f9fa11772a8f",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:37:18.349898Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/e2dbfe43f2d0bcf656e9ca2558fef6101a6444f0bfbbc0876a03a3858e335f66/d337feff840d7c72740474721a5ec1b4/93a08a38-7527-4884-9c97-80613b137726.jpg"
+            }
+          ]
+        },
+        {
+          "id": "b6a2ef52-a705-4da9-a608-e24d503afda5",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:35:27.763445Z",
+          "materials": [
+            "Coulissant",
+            "Électrique"
+          ],
+          "name": "Volet",
+          "operating_state": "working",
+          "position": 11,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:35:56.221864Z",
+          "pictures": [
+            {
+              "id": "ff54705e-953a-4567-bf2d-30ed891be6b3",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:35:49.941622Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/539004f0809f6ec6b8532b0a31721c43b8c7231b7220a6dbd45a56eb2fdfda0d/86f3988fe494619ae8d3df7008951ea9/119f5376-a71d-4067-9a37-e4e10cee0f71.jpg"
+            }
+          ]
+        },
+        {
+          "id": "e50615f5-944f-4ac3-bb01-a5650cb472d9",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [],
+          "comment": null,
+          "condition": "good",
+          "count": 1,
+          "defects": [],
+          "created_at": "2025-03-28T10:36:34.784893Z",
+          "materials": [
+            "Douille DCL"
+          ],
+          "name": "Éclairage",
+          "operating_state": "working",
+          "position": 12,
+          "room": "72761146-5280-4d38-b326-12fab3715ecf",
+          "updated_at": "2025-03-28T10:36:40.482907Z",
+          "pictures": [
+            {
+              "id": "dae63aa1-b300-432a-b7de-b191d98c6a76",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:37:00.399300Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/45d28af16c44a30fd4295b292cd1a12d203653a5e9f67b3c6e3ac11214b860e1/d6955033663009c2b8be0bc802126561/a04e7f3a-674c-4690-ac4c-4e36a01725c1.jpg"
+            },
+            {
+              "id": "d0b53ed6-20de-4a02-a120-83a456623f95",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:36:56.422627Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/2991ec2072f6bb0ef029d158dcd76cc57d0da91c74f8a8592e4ff0e3a58ebe7f/33bbf791124c71876dfe15aef57f4a6e/eb3c5cf8-4b65-4745-8a5c-90c6ece9fb5d.jpg"
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": "47ce3681-1f35-4aa3-af6e-4b27a783728f",
+      "object": "inspection_report.room",
+      "created_at": "2025-03-28T10:30:14.027574Z",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "name": "Balcon",
+      "position": 5,
+      "type": "balcony",
+      "updated_at": "2025-03-28T10:30:14.027588Z",
+      "elements": [
+        {
+          "id": "82f5e494-d8a7-4793-9f5e-4f8e5535a1bb",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Gris"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:30:46.363088Z",
+          "materials": [
+            "Béton peint"
+          ],
+          "name": "Sol",
+          "operating_state": null,
+          "position": 1,
+          "room": "47ce3681-1f35-4aa3-af6e-4b27a783728f",
+          "updated_at": "2025-03-28T10:30:52.912435Z",
+          "pictures": [
+            {
+              "id": "2b047945-c44b-4701-91d0-aeb463139705",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:31:57.748023Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/d652eaea0ec34c58faf5670152a078f85c7f9e7d9e076830934a0a3174ab77c1/115a2ab40fb85801711ced099af6ae23/294d6941-28bc-49b8-8592-4989c06ad143.jpg"
+            },
+            {
+              "id": "bcb26951-ae6e-40dd-8a8f-eeddd78bdc49",
+              "object": "inspection_report.picture",
+              "created_at": "2025-03-28T10:31:39.250221Z",
+              "url": "https://p.nockee.fr/inspection-picture/720/e30=/603eb05cb09e9761f482c291b8727cca20f488a1b5a51de44d6d783169d377db/20e96ac153ca5cde2b9c6b948591ef3b/4c028c92-4a41-404b-b2d8-897f53e44b07.jpg"
+            }
+          ]
+        },
+        {
+          "id": "b4771b66-1496-4773-aa67-20e181888689",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": "clean",
+          "colors": [
+            "Blanc"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:30:46.421432Z",
+          "materials": [
+            "Crépi"
+          ],
+          "name": "Mur",
+          "operating_state": null,
+          "position": 2,
+          "room": "47ce3681-1f35-4aa3-af6e-4b27a783728f",
+          "updated_at": "2025-03-28T10:31:14.857665Z",
+          "pictures": []
+        },
+        {
+          "id": "b547ab87-7d8f-4466-9ad0-a8c3dd847c9a",
+          "object": "inspection_report.element",
+          "check_in": null,
+          "cleanliness_state": null,
+          "colors": [
+            "Noir",
+            "Marron"
+          ],
+          "comment": null,
+          "condition": "good",
+          "count": null,
+          "defects": [],
+          "created_at": "2025-03-28T10:30:46.486689Z",
+          "materials": [
+            "En métal",
+            "Avec lattes en bois"
+          ],
+          "name": "Garde-corps",
+          "operating_state": null,
+          "position": 3,
+          "room": "47ce3681-1f35-4aa3-af6e-4b27a783728f",
+          "updated_at": "2025-03-28T10:31:14.874841Z",
+          "pictures": []
+        }
+      ],
+      "pictures": []
+    }
+  ],
+  "signatories": [
+    {
+      "id": "cacf344c-79f4-475d-b775-49c161a1d746",
+      "object": "inspection_report.signatory",
+      "created_at": "2025-03-27T12:28:22.123363Z",
+      "address": {
+        "city": "Toulouse",
+        "line_1": "Representé par : SENORIALES - 2 Place Auguste Albert",
+        "line_2": "",
+        "postal_code": "31500"
+      },
+      "email": "clecoeur@eedl.fr",
+      "first_name": "-",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "last_name": "FRANCOIS -",
+      "legal_name": null,
+      "move_out_address": {
+        "city": null,
+        "line_1": null,
+        "line_2": null,
+        "postal_code": null
+      },
+      "person_type": "natural_person",
+      "type": "owner",
+      "updated_at": "2025-03-27T12:31:06.177927Z"
+    },
+    {
+      "id": "ac15761d-11ce-4557-abd8-30ca5a75de87",
+      "object": "inspection_report.signatory",
+      "created_at": "2025-03-27T12:30:14.827562Z",
+      "address": {
+        "city": "Bordeaux",
+        "line_1": "32 Allee de Boutaut",
+        "line_2": "",
+        "postal_code": "33300"
+      },
+      "email": "clecoeur@eedl.fr",
+      "first_name": "Corentin",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "last_name": "Lecoeur",
+      "legal_name": "L’Expert État des Lieux",
+      "move_out_address": {
+        "city": null,
+        "line_1": null,
+        "line_2": null,
+        "postal_code": null
+      },
+      "person_type": "legal_person",
+      "type": "representative",
+      "updated_at": "2025-03-27T12:31:06.273589Z"
+    },
+    {
+      "id": "e33cd43a-41a3-4786-834b-2d052a688ef2",
+      "object": "inspection_report.signatory",
+      "created_at": "2025-03-27T12:31:11.451197Z",
+      "address": {
+        "city": "Bruges",
+        "line_1": "10 Allée du Bocage",
+        "line_2": null,
+        "postal_code": "33520"
+      },
+      "email": "clecoeur@eedl.fr",
+      "first_name": "-",
+      "inspection_report": "5bb3e180-ef3b-4d3d-bb88-f0b907f6d83d",
+      "last_name": "TABARLY -",
+      "legal_name": null,
+      "move_out_address": {
+        "city": null,
+        "line_1": null,
+        "line_2": null,
+        "postal_code": null
+      },
+      "person_type": "natural_person",
+      "type": "tenant",
+      "updated_at": "2025-03-27T12:31:47.288162Z"
+    }
+  ]
+}

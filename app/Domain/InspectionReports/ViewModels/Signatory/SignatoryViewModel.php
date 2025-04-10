@@ -56,6 +56,11 @@ class SignatoryViewModel extends ViewModel
         return $this->signatory->firstName.' '.$this->signatory->lastName;
     }
 
+	public function legalName(): ?string
+	{
+		return $this->signatory->legalName;
+	}
+
     public function signature(): ?string
     {
         $documentPath = 'documents/'.$this->id.'/signatures/';

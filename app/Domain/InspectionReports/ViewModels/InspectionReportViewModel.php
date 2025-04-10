@@ -70,21 +70,21 @@ class InspectionReportViewModel extends ViewModel
         return new PropertyViewModel($this->data->property);
     }
 
-    public function keys(): array
+    public function keys(): ?array
     {
         return collect($this->data->keys)
             ->map(fn (array $key) => new KeyViewModel(KeyData::from($key), $this->picturesWithIndex()))
             ->all();
     }
 
-    public function meters(): array
+    public function meters(): ?array
     {
         return collect($this->data->meters)
             ->map(fn (array $meter) => new MeterViewModel(MeterData::from($meter), $this->picturesWithIndex()))
             ->all();
     }
 
-    public function rooms(): array
+    public function rooms(): ?array
     {
         return collect($this->data->rooms)
             ->map(fn (array $room) => new RoomViewModel(RoomData::from($room), $this->picturesWithIndex()))
@@ -96,7 +96,7 @@ class InspectionReportViewModel extends ViewModel
         return new SignatoriesViewModel($this->data->signatories);
     }
 
-    public function signatories(): array
+    public function signatories(): ?array
     {
         return collect($this->data->signatories)
             ->map(function (array $signatory, $index) {
@@ -226,7 +226,7 @@ class InspectionReportViewModel extends ViewModel
 	    $signatories = is_countable($this->data->signatories ?? null)
 		    ? count($this->data->signatories)
 		    : 0;
-	    $signaturesPath = storage_path('app/documents/'.$this->data->id.'/signatures');
+	    $signaturesPath = storage_path(config('app.temp_storage_path') . $this->data->id . '/signatures');
         $signaturesCount = count(glob($signaturesPath.'/*'));
 
         return json_decode(json_encode([
@@ -235,12 +235,12 @@ class InspectionReportViewModel extends ViewModel
         ]));
     }
 
-    public function getRepresentative(): SignatoryData
+    public function getRepresentative(): ?SignatoryData
     {
         return $this->signatoriesByType()->representative;
     }
 
-	public function getTenants(): DataCollection
+	public function getTenants(): ?DataCollection
 	{
 		return $this->signatoriesByType()->tenants;
 	}

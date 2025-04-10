@@ -20,6 +20,6 @@
 @include('inspection.blocks.keys')
 @pageBreak
 @include('inspection.blocks.observations')
-@include('inspection.blocks.signatures')
+{{-- @include('inspection.blocks.signatures')--}}
 </body>
 </html>

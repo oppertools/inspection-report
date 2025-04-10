@@ -30,4 +30,9 @@ enum KeyType: string
             self::OTHER => 'Autre',
         };
     }
+
+	public static function tryFromOrDefault(string|null $value): self
+	{
+		return self::tryFrom($value) ?? self::OTHER;
+	}
 }

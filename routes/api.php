@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/webhook/nockee', \App\Http\Controllers\InspectionReport\WebhookController::class);
+Route::post('/webhook/nockee', \App\Http\Controllers\InspectionReport\WebhookController::class);

@@ -36,7 +36,7 @@ class EnergyViewModel extends ViewModel
             return self::NO_HEATING;
         }
 
-        $type = $source->isDistrictHeating ? 'Chauffage collectif' : 'Chauffage individuel';
+        $type = $source->isDistrictHeating ? 'Collectif' : 'Individuel';
 
         return $this->formatWithEnergySource($type, $source);
     }
@@ -53,7 +53,7 @@ class EnergyViewModel extends ViewModel
             return self::NO_HOT_WATER;
         }
 
-        $type = $source->isDistrictHotWater ? 'Eau chaude collective' : 'Eau chaude individuelle';
+        $type = $source->isDistrictHotWater ? 'Collective' : 'Individuelle';
 
         return $this->formatWithEnergySource($type, $source);
     }
@@ -99,6 +99,6 @@ class EnergyViewModel extends ViewModel
                 break;
         }
 
-        return $energySource ? "$type ($energySource)" : $type;
+        return $energySource ? "$energySource ($type)" : $energySource ?? 'Non communiqué';
     }
 }

@@ -7,11 +7,10 @@ use ZipArchive;
 
 readonly class PictureZipService
 {
-    public function createZip(string $picturePath, string $inspectionReportId): string
+    public function createZip(string $picturePath, $zipName, string $inspectionReportId, $cacheKey): string
     {
-        $zipName = "edl-{$inspectionReportId}.zip";
         $basePath = storage_path(config('app.temp_storage_path')."{$inspectionReportId}/{$zipName}");
-	    Cache::put("inspection:{$inspectionReportId}:zipName", $zipName);
+	    Cache::put("inspection:{$inspectionReportId}:{$cacheKey}", $zipName);
 
 		if (! is_dir(dirname($basePath))) {
             mkdir(dirname($basePath), 0777, true);

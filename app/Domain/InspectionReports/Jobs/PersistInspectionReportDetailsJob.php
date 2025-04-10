@@ -39,8 +39,13 @@ class PersistInspectionReportDetailsJob implements ShouldQueue
 	    $inspectionReport->finalized_at = $finalizedAt;
         $inspectionReport->nockee_id = $viewModel->id;
         $inspectionReport->type = $viewModel->type->value;
-        $inspectionReport->user_id = User::where('email', $viewModel->getRepresentative->email)->first()->id;
-        $inspectionReport->address = $viewModel->property()->formatedAddress();
+	    $representativeEmail = $viewModel->getRepresentative?->email;
+
+	    $inspectionReport->user_id = $representativeEmail
+		    ? User::where('email', $representativeEmail)->value('id')
+		    : User::where('email', 'acapelle@eedl.fr')->value('id');
+
+	    $inspectionReport->address = $viewModel->property()->formatedAddress();
 
         if (! $inspectionReport->save()) {
             Log::error('Failed to save inspection report data', [

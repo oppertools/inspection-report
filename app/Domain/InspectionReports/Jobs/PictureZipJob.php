@@ -32,7 +32,9 @@ class PictureZipJob implements ShouldQueue
 
         $path = $pictureZip->createZip(
             $cache,
+	        "edl-{$this->inspectionReportId}.zip",
             $this->inspectionReportId,
+	        'zipName'
         );
 
 	    Cache::put("inspection:{$this->inspectionReportId}:zip", $path);

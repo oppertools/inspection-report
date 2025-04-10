@@ -10,6 +10,8 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 class UploadFilesJob implements ShouldQueue
@@ -49,7 +51,7 @@ class UploadFilesJob implements ShouldQueue
 	        if ($modelId) {
 		        $model = InspectionReport::findOrFail($modelId);
 		        $model->pdf_path = Storage::disk('images')->path($storagePath . '/' . $pdfName);
-		        $model->zip_path = Storage::disk('images')->path($storagePath . '/' . $zipName);
+		        $model->zip_path = Storage::disk('images')->path($storagePath . '/' . $zipName . '.pdf');
 		        $model->save();
 	        }
 
@@ -59,8 +61,15 @@ class UploadFilesJob implements ShouldQueue
             Cache::forget("inspection:{$this->inspectionReportId}:modelId");
 	        Cache::forget("inspection:{$this->inspectionReportId}:pdfName");
 			Cache::forget("inspection:{$this->inspectionReportId}:zipName");
+
+
         } else {
             throw new \Exception('Erreur lors de l\'upload des fichiers');
         }
+
+		// Delete the files from the local storage
+	    if(File::exists(storage_path('app/private/temp/inspection-report/' . $this->inspectionReportId))) {
+			File::deleteDirectory(storage_path('app/private/temp/inspection-report/' . $this->inspectionReportId));
+	    }
     }
 }

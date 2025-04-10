@@ -43,10 +43,10 @@ class PropertyViewModel extends ViewModel
         return new SmokeDetectorViewModel($this->property?->features);
     }
 
-	public function furnishedLabel(): string
+	public function furnishedLabel(): ?string
 	{
 		if (!isset($this->property?->furnished)) {
-			return 'Non communiqué';
+			return null;
 		}
 
 		return $this->property->furnished ? 'meublé' : 'non meublé';
@@ -71,21 +71,20 @@ class PropertyViewModel extends ViewModel
         return $this->property?->type?->label() ?? 'Non communiqué';
     }
 
-    public function title(): ?string
-    {
-        $parts = [
-            $this->type(),
-            $this->furnishedLabel(),
-        ];
+	public function reference(): ?string
+	{
+		return $this->property?->reference ?? null;
+	}
 
-        if ($this->surfaceArea()) {
-            $parts[] = $this->surfaceArea();
-        }
-
-        if ($this->roomsCount()) {
-            $parts[] = $this->roomsCount();
-        }
-
-        return implode(' - ', $parts);
-    }
+	public function title(): string
+	{
+		return collect([
+			$this->type(),
+			$this->furnishedLabel(),
+			$this->surfaceArea(),
+			$this->roomsCount(),
+		])
+			->filter()
+			->implode(' - ');
+	}
 }

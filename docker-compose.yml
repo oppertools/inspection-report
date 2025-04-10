@@ -103,6 +103,12 @@ services:
             - sail
         volumes:
             - tmpfiles:/tmp
+    redis:
+        image: redis:alpine
+        networks:
+            - sail
+        ports:
+            - "6379:6379"
 
 networks:
     sail:

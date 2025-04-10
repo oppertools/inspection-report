@@ -16,8 +16,10 @@
         <tr>
             <td class="w-[220px]">{{ $key->name }}</td>
             <td class="w-[120px] text-center">{{ $key->checkIn?->count }}</td>
+
             <td @class([
         'w-[120px] text-center',
+         !$key->count ? 'bg-white' : '',
         $key->checkIn?->count > $key->count ? 'bg-red-100 text-red-600 font-semibold' : ''
 ])>{{ $key->count }}</td>
             <td class="w-[120px] text-center"> {{ $data->formatedNumericFinalizedDate() }}</td>

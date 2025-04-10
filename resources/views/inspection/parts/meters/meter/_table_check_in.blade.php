@@ -8,7 +8,7 @@
     </thead>
     <tbody>
     <tr>
-        <td class="w-[220px]">{{ $meter->number }}</td>
+        <td class="w-[220px] text-center">{{ $meter->number }}</td>
         <td class="w-[270px] text-right ">
             @include('inspection.parts.meters.meter._index', [
 	'context' => $data->type->value,
@@ -18,11 +18,11 @@
             <div class="flex flex-col gap-1">
                 {{ $meter->comment }}
                 @if($meter->pictures())
-                    @foreach($meter->pictures() as $picture)
-                        <div class="flex gap-1.5 flex-wrap">
+                    <div class="flex gap-1.5 flex-wrap">
+                        @foreach($meter->pictures() as $picture)
                             <a href="#{{ $picture->id }}" class="badge-media">Photo {{ $picture->number }}</a>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 @endif
             </div>
         </td>

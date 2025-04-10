@@ -1,0 +1,9 @@
+<div class="text-green-600"></div>
+<div class="text-purple-600"></div>
+<div class="text-red-600"></div>
+<div class="text-orange-600"></div>
+<div class="excellent-condition"></div>
+<div class="good-condition"></div>
+<div class="used-condition"></div>
+<div class="poor-condition"></div>
+<div class="missing-condition"></div>

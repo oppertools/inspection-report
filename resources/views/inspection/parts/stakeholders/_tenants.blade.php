@@ -4,8 +4,14 @@
         @if($data->signatoriesByType->hasDuplicateAddresses)
             <div class="flex flex-col gap-1">
                 <span class="font-semibold">
-                    @foreach($data->signatoriesByType->tenants as $tenant)
-                        {{ $tenant->fullName }} @if(!$loop->last) et @endif
+                    @php
+                        $tenants = $data->signatoriesByType->tenants;
+                    @endphp
+                    @foreach($tenants as $index => $tenant)
+                        {{ $tenant->fullName }}
+                        @if($index < count($tenants) - 2),
+                        @elseif($index === count($tenants) - 2) et
+                        @endif
                     @endforeach
                 </span>
                 <div class="text-muted">
@@ -20,7 +26,7 @@
                     <div class="text-muted">
                         @if($data->type === \App\Domain\InspectionReports\Enums\InspectionReportType::CHECK_OUT)
                             <p class="font-semibold">Nouvelle adresse :</p>
-                            <p>48 Chemin de Mirepin, Résidence Terre Neuve, 33700 Mérignac</p>
+                            <p>{{ $tenant->formatedMoveOutAddress }}</p>
                         @else
                             <p>{{ $tenant->formatedAddress }}</p>
                         @endif

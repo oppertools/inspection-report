@@ -27,36 +27,67 @@ class ExtractSignaturesJob implements ShouldQueue
     /**
      * @throws \Exception
      */
-    public function handle(): void
-    {
-        $workingDir = storage_path(config('app.temp_storage_path').$this->inspectionReportData->id);
-        $path = $workingDir.'/signatures/';
-        $originalFilePath = "{$workingDir}/original.pdf";
-        $workingFilePath = "{$workingDir}/last.pdf";
-        $scriptPath = base_path('scripts/extract_signatures.bash');
-        $localScriptPath = "{$workingDir}/extract_signatures.bash";
+	public function handle(): void
+	{
+		$this->prepareWorkingDirectory();
+		$this->storeOriginalPdf();
+		$this->copyExtractionScript();
+		$this->runExtractionProcess();
 
-        if (! is_dir($workingDir)) {
-            mkdir($workingDir, 0777, true);
-        }
+		Cache::put("inspection:{$this->inspectionReportData->id}:signatures", $this->getSignaturePath());
+	}
 
-        file_put_contents($originalFilePath, file_get_contents($this->inspectionReportData->documents->inspection_report_pdf));
+	private function prepareWorkingDirectory(): void
+	{
+		if (! is_dir($this->getWorkingDir())) {
+			mkdir($this->getWorkingDir(), 0755, true);
+		}
+	}
 
-        copy($scriptPath, $localScriptPath);
-        chmod($localScriptPath, 0755);
+	private function storeOriginalPdf(): void
+	{
+		$pdfContent = file_get_contents($this->inspectionReportData->documents->inspection_report_pdf);
+		file_put_contents($this->getOriginalFilePath(), $pdfContent);
+	}
 
-        $process = new Process([
-            'bash', './extract_signatures.bash',
-        ], cwd: $workingDir);
+	private function copyExtractionScript(): void
+	{
+		$scriptSource = base_path('scripts/extract_signatures.bash');
+		$scriptDestination = $this->getLocalScriptPath();
 
-        $process->run();
+		copy($scriptSource, $scriptDestination);
+		chmod($scriptDestination, 0755);
+	}
 
-        if (! $process->isSuccessful()) {
-            Log::error($process->getErrorOutput());
-            throw new ProcessFailedException($process);
-        }
+	private function runExtractionProcess(): void
+	{
+		$process = new Process(['bash', './extract_signatures.bash'], cwd: $this->getWorkingDir());
+		$process->run();
 
-		Log::error($process->getOutput());
-        Cache::put("inspection:{$this->inspectionReportData->id}:signatures", $path);
-    }
+		if (! $process->isSuccessful()) {
+			Log::error($process->getErrorOutput());
+			throw new ProcessFailedException($process);
+		}
+	}
+
+	private function getWorkingDir(): string
+	{
+		return storage_path(config('app.temp_storage_path') . $this->inspectionReportData->id);
+	}
+
+	private function getSignaturePath(): string
+	{
+		return $this->getWorkingDir() . '/signatures/';
+	}
+
+	private function getOriginalFilePath(): string
+	{
+		return $this->getWorkingDir() . '/original.pdf';
+	}
+
+	private function getLocalScriptPath(): string
+	{
+		return $this->getWorkingDir() . '/extract_signatures.bash';
+	}
+
 }

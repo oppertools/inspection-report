@@ -2,6 +2,7 @@
 
 namespace App\Domain\InspectionReports\Data;
 
+use App\Domain\InspectionReports\Casts\MeterTypeCast;
 use App\Domain\InspectionReports\Enums\MeterType;
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Attributes\WithCast;
@@ -28,6 +29,8 @@ class MeterData extends Data
         public ?int $index_2,
 
         public ?string $number,
+
+	    #[WithCast(MeterTypeCast::class)]
         public MeterType $type,
         /** @var DataCollection<PictureData> */
         public ?DataCollection $pictures

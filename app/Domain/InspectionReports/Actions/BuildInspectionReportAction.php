@@ -12,6 +12,7 @@ use App\Domain\InspectionReports\Jobs\PictureZipJob;
 use App\Domain\InspectionReports\Jobs\QrCodeGeneratorJob;
 use App\Domain\InspectionReports\Jobs\UploadFilesJob;
 use Illuminate\Support\Facades\Bus;
+use Illuminate\Support\Facades\Log;
 
 readonly class BuildInspectionReportAction
 {

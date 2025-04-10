@@ -8,65 +8,43 @@ use Spatie\ViewModels\ViewModel;
 
 class SmokeDetectorViewModel extends ViewModel
 {
-    public function __construct(
-        private readonly ?FeaturesData $features,
-    ) {}
+	public function __construct(
+		private readonly ?FeaturesData $features,
+	) {}
 
-    public function __get($name)
-    {
-        return method_exists($this, $name) ? $this->$name() : null;
-    }
+	public function smokeDetectorCondition(): OperatingState
+	{
+		return $this->features?->smokeDetectorCondition ?? OperatingState::UNKNOW;
+	}
 
-    protected function smokeDetectorCondition(): ?OperatingState
-    {
-        return $this->features?->smokeDetectorCondition;
-    }
+	public function isPresent(): bool
+	{
+		return $this->smokeDetectorCondition() !== OperatingState::MISSING;
+	}
 
-    public function isPresent(): object
-    {
-        $condition = $this->smokeDetectorCondition();
+	public function presence(): object
+	{
+		$present = $this->isPresent();
 
-        if (! $condition) {
-            return (object) [
-                'label' => 'Non communiqué',
-                'color' => 'black',
-            ];
-        }
+		return (object) [
+			'label' => $present ? 'Présent' : 'Absent',
+			'icon'  => $present ? 'check' : 'x',
+			'color' => $present ? 'green' : 'red',
+		];
+	}
 
-        $isPresent = $condition->value !== OperatingState::MISSING;
+	public function condition(): object
+	{
+		$condition = $this->isPresent()
+			? $this->smokeDetectorCondition()
+			: OperatingState::UNKNOW;
 
-        return (object) [
-            'label' => $isPresent ? 'Présent' : 'Absent',
-            'color' => $isPresent ? 'green' : 'red',
-        ];
-    }
-
-    public function presenceIcon(): string
-    {
-        if (! $this->smokeDetectorCondition()) {
-            return 'circle-minus';
-        }
-
-        return $this->isPresent()->label === 'Présent' ? 'check' : 'x';
-    }
-
-    public function condition(): object
-    {
-        $condition = $this->smokeDetectorCondition();
-
-        return (object) [
-            'label' => $condition?->label() ?? 'Non communiqué',
-            'icon' => $condition?->icon() ?? 'circle-minus',
-            'color' => $condition?->color() ?? 'gray',
-        ];
-    }
-
-    public function presence(): object
-    {
-        return (object) [
-            'label' => $this->isPresent()->label,
-            'color' => $this->isPresent()->color,
-            'icon' => $this->presenceIcon(),
-        ];
-    }
+		return (object) [
+			'label' => $condition->label(),
+			'icon'  => $condition->icon(),
+			'color' => $condition->color(),
+		];
+	}
 }
+
+

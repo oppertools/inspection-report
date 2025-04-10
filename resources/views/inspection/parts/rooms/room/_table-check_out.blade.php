@@ -51,7 +51,7 @@
                 <div class="flex flex-col gap-1">
                     @include('inspection.parts.rooms.room._observation')
                     <div class="flex gap-1.5 flex-wrap">
-                        @foreach($room->pictures() as $picture)
+                        @foreach($element->pictures as $picture)
                             <a href="#{{ $picture->id }}" class="badge-media">Photo {{ $picture->number }}</a>
                         @endforeach
                     </div>

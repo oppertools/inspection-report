@@ -57,4 +57,11 @@ class SignatoryData extends Data
             (new AddressViewModel($this->address))->formatAddress()
             : null;
     }
+
+	public function formatedMoveOutAddress(): ?string
+	{
+		return $this->moveOutAddress ?
+			(new AddressViewModel($this->moveOutAddress))->formatAddress()
+			: null;
+	}
 }

@@ -131,7 +131,8 @@ return [
 
 	'services' => [
 		'nockee' => [
-			'webhook_secret' => env('NOCKEE_WEBHOOK_SECRET'),
+			'webhook_secret' => env('NOCKEE_SECRET_WEBHOOK'),
+			'api_key' => env('NOCKEE_API_KEY'),
 		]
 	]
 

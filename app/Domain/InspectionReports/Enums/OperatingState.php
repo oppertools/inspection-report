@@ -9,6 +9,7 @@ enum OperatingState: string
     case NOT_TESTED = 'not_tested';
     case UNABLE_TO_TEST = 'unable_to_test';
     case MISSING = 'missing';
+	case UNKNOW = 'unknow';
 
     public function label(): string
     {
@@ -18,6 +19,7 @@ enum OperatingState: string
             self::NOT_TESTED => 'Non testé',
             self::UNABLE_TO_TEST => 'Non testable',
             self::MISSING => 'Absent',
+	        self::UNKNOW => 'Non communiqué',
         };
     }
 
@@ -29,8 +31,14 @@ enum OperatingState: string
             self::NOT_TESTED => 'circle-minus',
             self::UNABLE_TO_TEST => 'ban',
             self::MISSING => 'x',
+            self::UNKNOW => 'x',
         };
     }
+
+	public static function tryFromOrDefault(string|null $value): self
+	{
+		return self::tryFrom($value) ?? self::UNKNOW;
+	}
 
     public function color(): string
     {
@@ -40,6 +48,7 @@ enum OperatingState: string
             self::NOT_TESTED => 'gray',
             self::UNABLE_TO_TEST => 'orange',
             self::MISSING => 'purple',
+            self::UNKNOW => 'gray',
         };
     }
 }
