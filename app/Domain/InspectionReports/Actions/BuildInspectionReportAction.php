@@ -22,6 +22,7 @@ readonly class BuildInspectionReportAction
 
     public function handle(): void
     {
+		Log::info('Action called:');
         Bus::chain([
 			new PersistInspectionReportDetailsJob($this->data),
             new DownloadPictureJob($this->data),

@@ -28,11 +28,16 @@ readonly class MakeInspectionReportPdfAction
 
 		$data = $response->json();
 
+		Log::info('Command started:', ['data' => $data]);
 		try {
 			$inspectionReportData = InspectionReportData::from($data);
 			(new BuildInspectionReportAction($inspectionReportData))->handle();
 			return true;
 		} catch (\Throwable $e) {
+			Log::error('Error while requesting API:', [
+				'error' => $e->getMessage(),
+				'trace' => $e->getTraceAsString(),
+			]);
 			return false;
 		}
 	}
