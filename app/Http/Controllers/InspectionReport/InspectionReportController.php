@@ -21,7 +21,7 @@ class InspectionReportController extends Controller
 
 	public function show(string $id)
 	{
-		$inspectionReport = InspectionReport::findOrFail($id);
+		$inspectionReport = InspectionReport::where('nockee_id', $id)->first();
 
 		if(!$inspectionReport) {
 			abort(404, 'Inspection report not found');

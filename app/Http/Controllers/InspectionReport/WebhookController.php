@@ -16,10 +16,6 @@ class WebhookController extends Controller
 	public function __invoke(Request $request)
 	{
 
-		Log::info('Nockee webhook received', [
-			'status' => 'Received',
-		]);
-
 		if (!$this->checkSignature($request)) {
 			Log::error('Nockee webhook received', [
 				'status' => 'Bad Signature',
@@ -30,16 +26,10 @@ class WebhookController extends Controller
 		$id = request('id');
 		(new MakeInspectionReportPdfAction($id))->handle();
 
-		Log::info('Nockee webhook received', [
-			'request' => 'Job started',
-		]);
 		return response()->json(['success' => true], 200);
 	}
 
 	private function checkSignature(Request $request): bool {
-		Log::info('CheckSign', [
-			'status' => 'Received',
-		]);
 		$expectedSignature = $request->header('X-Nockee-Signature-256');
 
 		if (!$expectedSignature) {

@@ -28,7 +28,6 @@ readonly class MakeInspectionReportPdfAction
 
 		$data = $response->json();
 
-		Log::info('Command started:', ['data' => $data]);
 		try {
 			$inspectionReportData = InspectionReportData::from($data);
 			(new BuildInspectionReportAction($inspectionReportData))->handle();

@@ -30,7 +30,6 @@ class PersistInspectionReportDetailsJob implements ShouldQueue
      */
     public function handle(): InspectionReport
     {
-	    Log::info('First job called:');
         $viewModel = new InspectionReportViewModel($this->inspectionReportData);
         $storagePath = "inspection-report/{$viewModel->id}/";
         $finalizedAt = $viewModel->finalizedAt;
