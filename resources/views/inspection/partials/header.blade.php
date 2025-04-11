@@ -33,12 +33,11 @@
                     </div>
                     <p class="text-muted leading-5">Scannez ce QR code pour télécharger l’ensemble des photos en haute-définition.</p>
                 </div>
-                {{--
                 <img
                         src="data:image/svg+xml;base64,{{ base64_encode(file_get_contents(storage_path(config('app.temp_storage_path') . '/' . $data->id . '/qrcode.svg'))) }}"
                         width="80"
                         height="80"
-                        alt="QR Code"> --}}
+                        alt="QR Code">
 
             </div>
         </div>

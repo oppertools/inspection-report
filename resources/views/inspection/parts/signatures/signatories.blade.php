@@ -6,7 +6,7 @@
         @if($data->signatories)
                 @foreach($data->signatories as $index => $signatory)
                 @php
-                        $signatureIndex = $index + 1;
+                        $signatureIndex = $signatoriesCount > $signaturesCount ? $index : $index + 1;
                 @endphp
                 <x-signatory
                         :signatory="$signatory"

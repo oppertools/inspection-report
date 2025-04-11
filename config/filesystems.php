@@ -59,20 +59,6 @@ return [
             'throw' => false,
             'report' => false,
         ],
-
-        'images' => [
-            'driver' => 's3',
-            'key' => env('IMAGES_S3_KEY', 'minio'),
-            'secret' => env('IMAGES_S3_SECRET', 'password'),
-            'region' => env('IMAGES_S3_REGION', 'us-east-1'),
-            'bucket' => env('IMAGES_S3_BUCKET', 'opper'),
-            'url' => env('IMAGES_URL'),
-            'endpoint' => env('IMAGES_S3_ENDPOINT'),
-            'use_path_style_endpoint' => env('IMAGES_S3_USE_PATH_STYLE_ENDPOINT', true),
-            'throw' => true,
-            'visibility' => 'public',
-        ],
-
     ],
 
     /*

@@ -26,13 +26,14 @@ class InspectionReportPdfGeneratorService
             mkdir($directory, 0755, true);
         }
 
-        $request = Gotenberg::chromium('http://localhost:3000')
+        $request = Gotenberg::chromium(config('app.gotenberg.url'))
             ->pdf()
             ->outputFilename($filename)
             ->assets(Stream::string('style.css', file_get_contents(public_path('css/app.css'))))
             ->html(Stream::string('index.html', $html));
 
         $result = Gotenberg::save($request, $basePath);
+
 
         if ($result !== $filename.'.pdf') {
             throw new Exception('Failed to generate PDF');

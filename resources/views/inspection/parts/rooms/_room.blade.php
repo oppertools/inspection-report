@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-x-10 gap-y-4">
+    <div class="grid grid-cols-2 gap-x-5 gap-y-4">
         @foreach($data->roomPicturesWithNumber($room->id) as $picture)
             <div id="{{ $picture['id'] }}" class="break-inside-avoid flex flex-col gap-1.5 text-center">
                 <strong>{{ $picture['label'] }}</strong>
