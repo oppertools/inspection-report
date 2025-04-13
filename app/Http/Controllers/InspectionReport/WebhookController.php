@@ -16,6 +16,9 @@ class WebhookController extends Controller
 	public function __invoke(Request $request)
 	{
 
+		Log::info('Nockee webhook received', [
+			'status' => 'Webhook Received',
+		]);
 		if (!$this->checkSignature($request)) {
 			Log::error('Nockee webhook received', [
 				'status' => 'Bad Signature',
