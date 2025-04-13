@@ -52,11 +52,12 @@
       <div class="flex flex-col gap-2">
         <div class="grid grid-cols-[132px_auto]">
           <span class="w-32 text-blue-500 font-medium">Propre</span>
-          <p>L'élément a été testé et fonctionne au moment du test.</p>
+          <p>Le revêtement ou l'élément est nettoyé et ne présente pas de salissures</p>
         </div>
         <div class="grid grid-cols-[132px_auto]">
           <span class="w-32 text-red-500 font-medium">À nettoyer</span>
-          <p>Le revêtement ou l’élément nécessite une intervention de nettoyage en raison de salissures visibles ou de mauvaises odeurs.</p>
+          <p>Le revêtement ou l’équipement présente des signes manifestes de manque d’entretien, nécessitant une
+            intervention de nettoyage.</p>
         </div>
       </div>
     </div>
