@@ -1,6 +1,6 @@
 <div class="p-4 bg-gray-50 rounded-sm flex flex-col gap-2.5">
     @if($data->property->reference)
-        <span class="font-semibold text-blue-600">Référence : {{ $data->property->reference }}</span>
+        <span class="font-semibold text-blue-500">Référence : {{ $data->property->reference }}</span>
     @endif
     <div class="flex flex-col gap-1">
         <span class="font-semibold">{{$data->property->title }}</span>

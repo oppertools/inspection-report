@@ -10,11 +10,11 @@
         <span>Non communiqué</span>
     </div>
 @elseif ($data?->isPresent())
-    <div class="flex gap-0.5 items-center text-{{ $presence->color }}-600">
+    <div class="flex gap-0.5 items-center text-{{ $presence->color }}-500">
         <x-icon name="{{ $presence->icon }}" class="size-4" />
         {{ $presence->label }}
     </div>
-    <div class="flex gap-0.5 items-center text-{{ $condition->color }}-600">
+    <div class="flex gap-0.5 items-center text-{{ $condition->color }}-500">
         <x-icon name="{{ $condition->icon }}" class="size-4" />
         {{ $condition->label }}
     </div>

@@ -2,7 +2,7 @@
     @if($data->cleanliness?->state)
         <div class="flex flex-col gap-1">
             <span class="uppercase text-muted font-semibold">État de propreté générale</span>
-            <span class="text-{{ $data->cleanliness?->state?->color() }}-600">{{ $data->cleanliness?->state?->label() }}</span>
+            <span class="text-{{ $data->cleanliness?->state?->color() }}-500">{{ $data->cleanliness?->state?->label() }}</span>
         </div>
     @endif
     <div class="grid grid-cols-2 gap-x-10 gap-y-4">

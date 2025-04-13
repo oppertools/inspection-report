@@ -35,7 +35,7 @@
             </td>
             <td @class([
         'text-nowrap text-center',
-        $element->checkIn?->count > $element->count ? 'text-red-600 font-semibold' : ''
+        $element->checkIn?->count > $element->count ? 'text-red-500 font-semibold' : ''
 ])>
                 {{ $element->count }}
             </td>
