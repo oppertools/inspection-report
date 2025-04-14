@@ -15,7 +15,9 @@ readonly class MakeInspectionReportPdfAction
 
 	public function handle(): bool
 	{
-		Log::info('Api Started');
+		Log::info('Api Started', [
+			'id' => $this->inspectionId
+		]);
 		$response = Http::withHeaders([
 			'X-api-key' => '0JJtMVIc0aly3JJMxF5ccivn4Y51jiZsFIy2DfgrA36JfTWdgY',
 			'Accept' => 'application/json',
@@ -24,6 +26,10 @@ readonly class MakeInspectionReportPdfAction
 		]);
 
 		if (! $response->successful()) {
+			Log::error('error', [
+				'response' => $response->json(),
+				'inspectionId' => $this->inspectionId,
+			]);
 			return false;
 		}
 

@@ -16,18 +16,14 @@ class WebhookController extends Controller
 	public function __invoke(Request $request)
 	{
 
-		Log::info('Nockee webhook received', [
-			'status' => 'Webhook Received',
-		]);
-		/*
 		if (!$this->checkSignature($request)) {
 			Log::error('Nockee webhook received', [
 				'status' => 'Bad Signature',
 			]);
 			return response()->json(['error' => 'Signature invalide'], 401);
-		}*/
+		}
 
-		$id = request('id');
+		$id = request('data.object.id');
 		(new MakeInspectionReportPdfAction($id))->handle();
 
 		return response()->json(['success' => true], 200);

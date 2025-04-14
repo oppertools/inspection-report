@@ -4,6 +4,7 @@ namespace App\Domain\InspectionReports\Services;
 
 use App\Domain\InspectionReports\Data\InspectionReportData;
 use Exception;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -25,8 +26,7 @@ readonly class PictureDownloaderService
         $this->getRoomsPictures($basePath, $pictures);
 
         if (! is_dir($basePath) || ! file_exists($basePath)) {
-            Log::error('Failed to download pictures: directory does not exist');
-            throw new Exception('Failed to download pictures: directory does not exist');
+	        mkdir($basePath, 0777, true);
         }
 
         return $basePath;
@@ -72,7 +72,10 @@ readonly class PictureDownloaderService
         }
     }
 
-    private function savePicture(object $picture, string $folderPath, ?int $index): void
+	/**
+	 * @throws ConnectionException
+	 */
+	private function savePicture(object $picture, string $folderPath, ?int $index): void
     {
         if (! $index || ! $picture->url) {
             return;
