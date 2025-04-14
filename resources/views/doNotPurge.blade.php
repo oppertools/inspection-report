@@ -1,11 +1,7 @@
 <div class="text-green-600"></div>
-<div class="text-green-500"></div>
 <div class="text-purple-600"></div>
-<div class="text-purple-500"></div>
 <div class="text-red-600"></div>
-<div class="text-red-500"></div>
 <div class="text-orange-600"></div>
-<div class="text-orange-500"></div>
 <div class="excellent-condition"></div>
 <div class="good-condition"></div>
 <div class="used-condition"></div>

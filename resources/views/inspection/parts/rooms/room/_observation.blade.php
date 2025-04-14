@@ -4,7 +4,7 @@
         @if($element->cleanlinessState || $element->operatingState)
         <div class="flex gap-2 items-center font-medium flex-wrap">
             @if($element->cleanlinessState)
-            <span class="text-{{ $element->cleanlinessState?->color() }}-500">
+            <span class="text-{{ $element->cleanlinessState?->color() }}-600">
                 {{ $element->cleanlinessState?->label() }}
             </span>
             @endif
@@ -12,7 +12,7 @@
                 <span class="text-muted">-</span>
             @endif
                 @if($element->operatingState)
-                <span class="text-{{ $element->operatingState?->color() }}-500">
+                <span class="text-{{ $element->operatingState?->color() }}-600">
                     {{ $element->operatingState?->label() }}
                 </span>
                 @endif
