@@ -34,6 +34,8 @@ class PersistInspectionReportDetailsJob implements ShouldQueue
         $storagePath = "inspection-report/{$viewModel->id}/";
         $finalizedAt = $viewModel->finalizedAt;
 
+	    Log::info('Persist jobs');
+
 		$inspectionReport = InspectionReport::where('nockee_id', $viewModel->id)->first() ?? new InspectionReport();
 
 	    $inspectionReport->finalized_at = $finalizedAt;
