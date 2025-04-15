@@ -1,7 +1,5 @@
 <?php
 
-use App\Domain\InspectionReports\Data\InspectionReportData;
-use App\Domain\InspectionReports\ViewModels\InspectionReportViewModel;
 use Illuminate\Support\Facades\Route;
 
 

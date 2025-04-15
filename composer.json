@@ -15,6 +15,8 @@
         "laravel/tinker": "^2.10.1",
         "league/flysystem-aws-s3-v3": "^3.0",
         "mailersend/laravel-driver": "^2.9",
+        "mailjet/laravel-mailjet": "^3.1",
+        "mailjet/mailjet-apiv3-php": "^1.6",
         "openai-php/laravel": "^0.11.0",
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/browsershot": "^5.0",
