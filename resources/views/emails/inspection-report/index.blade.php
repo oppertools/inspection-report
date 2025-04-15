@@ -5,7 +5,7 @@ Bonjour {{ $representative }},
 
 
 L'{{ $inspectionType }} pour le bien situé **{{ $property }}** est maintenant **prêt à être téléchargé**
-<x-mail::button :url="$url" color="primary">
+<x-mail::button :url="$url" color="primary" target="_blank">
 Télécharger mon état des lieux
 </x-mail::button>
 
