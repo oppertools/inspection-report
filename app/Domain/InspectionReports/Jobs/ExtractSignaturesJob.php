@@ -72,8 +72,15 @@ class ExtractSignaturesJob implements ShouldQueue
 
 	private function getWorkingDir(): string
 	{
-		return storage_path(config('app.temp_storage_path') . $this->inspectionReportData->id);
+		$base = config('app.temp_storage_path');
+
+		if (empty($base)) {
+			throw new \RuntimeException('Temporary storage path is not configured.');
+		}
+
+		return storage_path($base . '/' . $this->inspectionReportData->id);
 	}
+
 
 	private function getSignaturePath(): string
 	{
