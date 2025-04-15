@@ -16,7 +16,11 @@ class InspectionReportController extends Controller
             abort(404, 'Fichier introuvable');
         }
 
-        return Storage::disk('s3')->download($inspectionReport->pdf_path);
+	    return Storage::disk('s3')->download(
+		    $inspectionReport->pdf_path,
+			null,
+		    ['Content-Type' => 'application/pdf']
+	    );
     }
 
 	public function show(string $id)
