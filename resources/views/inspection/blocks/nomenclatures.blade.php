@@ -38,7 +38,7 @@
           <p>L'élément a été testé mais ne fonctionne pas au moment du test.</p>
         </div>
         <div class="grid grid-cols-[132px_auto]">
-          <span class="w-32 text-gray-600 font-medium">Non testable</span>
+          <span class="w-32 text-gray-400 font-medium">Non testable</span>
           <p>L'élément n'a pu être testé le jour de l'état des lieux, une réserve est donc émise quant à son fonctionnement.</p>
         </div>
         <div class="grid grid-cols-[132px_auto]">

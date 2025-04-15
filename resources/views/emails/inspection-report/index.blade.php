@@ -4,7 +4,7 @@
 Bonjour {{ $representative }},
 
 
-L'état des lieux pour le bien situé **{{ $property }}** est maintenant **prêt à être téléchargé**
+L'{{ $inspectionType }} pour le bien situé **{{ $property }}** est maintenant **prêt à être téléchargé**
 <x-mail::button :url="$url" color="primary">
 Télécharger mon état des lieux
 </x-mail::button>

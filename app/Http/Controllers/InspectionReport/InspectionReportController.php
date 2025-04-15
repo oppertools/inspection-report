@@ -36,7 +36,6 @@ class InspectionReportController extends Controller
 
 		return view('inspection.show', [
 			'inspectionReport' => $inspectionReport,
-			'filePath' => $filePath,
 			'zipPath' => $zipPath,
 		]);
 	}

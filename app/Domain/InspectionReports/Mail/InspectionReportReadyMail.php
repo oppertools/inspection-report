@@ -56,6 +56,7 @@ class InspectionReportReadyMail extends Mailable
 				'tenants' => $this->viewModel->getTenants,
                 'representative' => $this->representativeName,
                 'property' => $this->propertyAddress,
+                'inspectionType' => $this->viewModel->title(),
                 'url' => route('inspection-report.download', $this->inspectionId),
             ]
         );

@@ -81,7 +81,8 @@ services:
             - sail
         command: minio server /data/minio --console-address ":${FORWARD_MINIO_CONSOLE_PORT:-8900}" --address ":${FORWARD_MINIO_PORT:-9001}"
     gotenberg:
-        image: gotenberg/gotenberg:7
+        build:
+            context: ./docker/8.4/gotenberg
         ports:
             - "3000:3000"
         networks:

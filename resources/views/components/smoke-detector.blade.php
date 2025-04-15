@@ -19,7 +19,7 @@
         {{ $condition->label }}
     </div>
 @else
-    <div class="flex gap-1.5 items-center text-gray-600">
+    <div class="flex gap-1.5 items-center text-gray-400">
         <x-icon name="warning" class="text-red-600 size-4" />
         <span class="text-red-600">Non équipé</span>
     </div>

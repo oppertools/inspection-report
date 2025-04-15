@@ -25,7 +25,6 @@
         </div>
         <div class="px-3 flex flex-col gap-1.5">
             <a href="{{ $zipPath }}" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-white text-[14px] shadow hover:bg-primary/90 h-9 px-4 py-2">Télécharger les photos</a>
-            <a href="{{ $filePath }}" target="_blank" class="inline-flex items-center justify-center whitespace-nowrap underline text-gray-500">Télécharger l'état des lieux</a>
         </div>
     </div>
 </div>
