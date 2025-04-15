@@ -8,20 +8,23 @@ use Illuminate\Support\Facades\Storage;
 
 class InspectionReportController extends Controller
 {
-    public function download(string $id)
-    {
-        $inspectionReport = InspectionReport::findOrFail($id);
+	public function download(string $id)
+	{
+		$inspectionReport = InspectionReport::findOrFail($id);
 
-        if (! Storage::disk('s3')->exists($inspectionReport->pdf_path)) {
-            abort(404, 'Fichier introuvable');
-        }
+		if (! Storage::disk('s3')->exists($inspectionReport->pdf_path)) {
+			abort(404, 'Fichier introuvable');
+		}
 
-	    return Storage::disk('s3')->download(
-		    $inspectionReport->pdf_path,
-			null,
-		    ['Content-Type' => 'application/pdf']
-	    );
-    }
+		$file = Storage::disk('s3')->get($inspectionReport->pdf_path);
+
+		$filename = "etat-des-lieux-{$inspectionReport->address}-{$inspectionReport->finalized_at->format('Y-m-d')}.pdf";
+
+		return response($file)
+			->header('Content-Type', 'application/pdf')
+			->header('Content-Disposition', 'attachment; filename="' . $filename . '"')
+			->header('Content-Length', strlen($file));
+	}
 
 	public function show(string $id)
 	{
