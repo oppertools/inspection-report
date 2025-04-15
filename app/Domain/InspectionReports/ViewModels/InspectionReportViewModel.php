@@ -43,11 +43,11 @@ class InspectionReportViewModel extends ViewModel
 
 	public function type(): ?string
 	{
-		if (! $this->data->type) {
+		if (! $this->data->type?->label()) {
 			return null;
 		}
 
-		return $this->data?->type === InspectionReportType::CHECK_IN ? 'entrée' : 'sortie';
+		return $this->data->type?->label() === "État des lieux d'entrée" ? 'entrée' : 'sortie';
 	}
 
 
