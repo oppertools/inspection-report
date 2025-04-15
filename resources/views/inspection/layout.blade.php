@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>État des lieux</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: "Inter 18pt", sans-serif;
-        }
-    </style>
     @vite(['resources/css/app.css'])
+    <style>
+        body { font-family: "Inter 18pt", sans-serif; }
+    </style>
 </head>
 <body>
 <div class="h-[5px] bg-primary w-full absolute top-0 left-0"></div>
