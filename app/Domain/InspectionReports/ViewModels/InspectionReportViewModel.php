@@ -41,7 +41,17 @@ class InspectionReportViewModel extends ViewModel
         return $this->data->type?->label() ?? 'État des lieux';
     }
 
-    public function description(): ?string
+	public function type(): ?string
+	{
+		if (! $this->data->type?->value) {
+			return null;
+		}
+
+		return $this->data->type === InspectionReportType::CHECK_IN ? 'entrée' : 'sortie';
+	}
+
+
+	public function description(): ?string
     {
         if ($this->data->type === InspectionReportType::CHECK_IN) {
             return 'État des lieux contradictoire à annexer au contrat de location dont il ne peut être dissocié.';

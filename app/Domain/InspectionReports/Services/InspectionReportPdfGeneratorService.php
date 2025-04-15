@@ -18,7 +18,7 @@ class InspectionReportPdfGeneratorService
 
         $html = view('inspection.layout', ['data' => $data])->render();
         $basePath = storage_path(config('app.temp_storage_path')."{$data->id}");
-        $filename = "edl-{$data->finalizedAt->format('d-m-Y')}";
+        $filename = "etat-des-lieux-{$data->type()}-{$data->property()->formatedAddress()}-{$data->finalizedAt->format('d-m-Y')}";
 	    Cache::put("inspection:{$data->id}:pdfName", $filename . '.pdf');
 
         $directory = dirname($basePath);
