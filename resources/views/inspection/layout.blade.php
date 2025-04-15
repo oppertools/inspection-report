@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: 'Inter 18pt', sans-serif;
+            font-family: "Inter 18pt", sans-serif;
         }
     </style>
     @vite(['resources/css/app.css'])
